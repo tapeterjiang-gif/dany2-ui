@@ -11,6 +11,8 @@ Dany 2 空气检测仪的界面设计与产品效果展示。
 - 六套日常界面及开关机状态，正视与斜视共十六张产品效果图，可点击放大
 - 502 × 410 原尺寸、4 倍高清 PNG 与透明切图
 - 正式 Q 品牌 favicon、适配手机的介绍页面和 PNG 资源下载
+- 主页面内的六页滑动演示：读数淡入淡出、趋势图收展、评级栏与玻璃高光动效、分页指示器与屏保唤醒
+- 四部分开发说明：动效规则、手势与时长、计算公式、状态与验收；按钮切换 800 ms，手势吸附 220–300 ms
 
 所有图像交付资源为 PNG；读数、评级与历史数据为设计示例。温度冷热感按 PMV 示意，不能仅凭温度推导。
 
@@ -19,6 +21,8 @@ Matter 配置页的二维码与配对码为演示内容；Qingping 页两个二�
 ## 文件结构
 
 - index.html：离线及在线介绍页面，内含样式与交互
+- motion.js：主页面交互动效
+- motion-assets/：图表、评级栏透明图层和屏保 PNG
 - assets/：页面图片、产品效果图和下载包
 - design/：六套日常界面、开关机状态页的 PNG 定稿与切图
 - .nojekyll：纯静态页面标记
@@ -34,3 +38,5 @@ Matter 配置页的二维码与配对码为演示内容；Qingping 页两个二�
 评级依据参考：https://tapeterjiang-gif.github.io/environment_rating/ 。
 
 品牌素材参考：https://tapeterjiang-gif.github.io/qingping-brand/ 。
+
+Matter 配置页的二维码与配对码为演示内容；Qingping 页两个二维码用于 App 下载。品牌素材参考：https://tapeterjiang-gif.github.io/qingping-brand/ 。
