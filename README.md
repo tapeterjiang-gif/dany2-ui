@@ -1,42 +1,28 @@
-# Dany 2 UI
+# Dany 2 UI 定版 · 2026-11-02
 
-Dany 2 空气检测仪的界面设计与产品效果展示。
+- 屏幕：502×410 px，1.96英寸AMOLED；纯黑底与圆角适配。
+- 六个功能页面：温度、相对湿度、CO₂、PM2.5/PM10、Qingping添加、Matter添加；另含开关机与屏保设计。
+- 字体：Roboto Regular 400、Roboto SemiBold 600、Noto Sans CJK SC Regular 400；附原始SIL OFL许可与版本来源。
+- PM参考图：999 / 999 μg/m³，极差档。两项量程0–999，按Roboto实际字宽动态排版；短组合108px，2+3/3+2位99px，3+3位84px。
+- 评级指示器：温度7档、相对湿度3档、CO₂ 3档、PM 6档；玻璃高光已减弱，配套完整状态及独立底色/高光。
+- 状态栏图标：Wi-Fi四档、蓝牙一个、空电池；电量填充与时间由程序绘制。
+- 趋势图：程序绘制，仅交付单柱与双柱柱顶圆角、坐标与指南；文字和数字也由程序绘制。
+- 主介绍页直接展示切图、坐标、字体和接入指南，附离线下载与交互动效。按钮切换800ms；手势吸附220–300ms。
+- 产品效果：六个功能页面及开关机状态的正视、斜视，共16张。
 
-**在线说明页：** https://tapeterjiang-gif.github.io/dany2-ui/
+监测数据为设计示例；Matter二维码和配对码为演示，实机应由设备生成。Qingping二维码为App下载链接。产品效果为照片合成参考。
 
-## 内容
+当前公开页面：https://tapeterjiang-gif.github.io/dany2-ui/
 
-- 温度、相对湿度、CO₂、PM2.5 / PM10，以及 Qingping、Matter 添加设备六套界面
-- 使用正式 Qingping Wordmark 的开机、关机状态页
-- 六套日常界面及开关机状态，正视与斜视共十六张产品效果图，可点击放大
-- 502 × 410 原尺寸、4 倍高清 PNG 与透明切图
-- 正式 Q 品牌 favicon、适配手机的介绍页面和 PNG 资源下载
-- 主页面内的六页滑动演示：读数淡入淡出、趋势图收展、评级栏与玻璃高光动效、分页指示器与屏保唤醒
-- 四部分开发说明：动效规则、手势与时长、计算公式、状态与验收；按钮切换 800 ms，手势吸附 220–300 ms
+## 开发与离线使用
 
-所有图像交付资源为 PNG；读数、评级与历史数据为设计示例。温度冷热感按 PMV 示意，不能仅凭温度推导。
+直接打开 index.html，或运行 python3 -m http.server 8000。页面、字体与素材均可本地使用。
 
-Matter 配置页的二维码与配对码为演示内容；Qingping 页两个二维码用于 App 下载。
+- index.html：设计说明、交互演示、组件预览和开发指南。
+- motion.js：整页滑动与分层动效。
+- pm-text-layout.js / pm-type-demo.js：PM动态测宽与排版演示。
+- assets/：当前PNG、开源字体、许可和下载包。
+- motion-assets/：网页动效所用透明图层，不作为设备端趋势图交付。
+- design/：当前页面参考、开发组件和规格资料。
 
-## 文件结构
-
-- index.html：离线及在线介绍页面，内含样式与交互
-- motion.js：主页面交互动效
-- motion-assets/：图表、评级栏透明图层和屏保 PNG
-- assets/：页面图片、产品效果图和下载包
-- design/：六套日常界面、开关机状态页的 PNG 定稿与切图
-- .nojekyll：纯静态页面标记
-
-## 本地浏览
-
-直接打开 index.html，或在本目录运行 python3 -m http.server 8000，然后访问 http://localhost:8000/ 。页面不依赖外部字体、脚本或接口。
-
-## GitHub Pages
-
-发布来源：main 分支根目录。推送更新后，由 GitHub Pages 自动发布。
-
-评级依据参考：https://tapeterjiang-gif.github.io/environment_rating/ 。
-
-品牌素材参考：https://tapeterjiang-gif.github.io/qingping-brand/ 。
-
-Matter 配置页的二维码与配对码为演示内容；Qingping 页两个二维码用于 App 下载。品牌素材参考：https://tapeterjiang-gif.github.io/qingping-brand/ 。
+字体许可见 assets/fonts/Roboto-OFL.txt 与 assets/fonts/NotoSansCJKsc-LICENSE.txt。发布来源为main分支根目录，GitHub Pages自动部署。

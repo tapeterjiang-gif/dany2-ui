@@ -1,0 +1,39 @@
+{
+  "canvas": [
+    502,
+    410
+  ],
+  "qingping": {
+    "download-qr-ios": [
+      104,
+      205,
+      103,
+      103
+    ],
+    "download-qr-google-play": [
+      295,
+      205,
+      103,
+      103
+    ],
+    "app-store-badge": [
+      95.5,
+      329,
+      120,
+      40
+    ],
+    "google-play-badge": [
+      286.5,
+      329,
+      120,
+      40
+    ]
+  },
+  "wordmark": {
+    "x": 121,
+    "y": 172.23545179022884,
+    "width": 260,
+    "height": 66
+  },
+  "units": "1x PNG top-left x,y,width,height; 4x files displayed at 1x use same coordinates"
+}

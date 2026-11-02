@@ -1,0 +1,29 @@
+{
+  "canvas": {
+    "width": 502,
+    "height": 410
+  },
+  "baselineY": 394,
+  "groupCount": 24,
+  "groupStep": 18,
+  "single": {
+    "file": "single-bar-top-cap.png",
+    "width": 13,
+    "height": 3,
+    "radius": 3,
+    "x": "35 + i*18",
+    "y": "394 - h"
+  },
+  "double": {
+    "file": "double-bar-top-cap.png",
+    "width": 6,
+    "height": 2,
+    "radius": 2,
+    "PM25_x": "35 + i*18",
+    "PM10_x": "35 + i*18 + 7",
+    "gap": 1,
+    "y": "394 - h_for_this_series"
+  },
+  "format": "white alpha shape; tint per bar grade; 1x and 4x",
+  "heightFormula": "clamp((value-minValue)*scale,0,94) * reveal"
+}

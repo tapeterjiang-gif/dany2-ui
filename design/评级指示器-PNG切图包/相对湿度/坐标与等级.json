@@ -1,0 +1,56 @@
+{
+  "metric": "相对湿度",
+  "canvas": {
+    "width": 502,
+    "height": 410
+  },
+  "slice": {
+    "x": 457,
+    "y": 130,
+    "width": 16,
+    "height": 102
+  },
+  "scale4x": {
+    "x": 1828,
+    "y": 520,
+    "width": 64,
+    "height": 408
+  },
+  "track": {
+    "x": 461,
+    "y": 132,
+    "width": 8,
+    "height": 98
+  },
+  "active_glass": {
+    "x": 459.4,
+    "width": 11.2
+  },
+  "order": "top to bottom",
+  "states": [
+    {
+      "id": 1,
+      "label": "偏湿",
+      "file": "state-01-wet.png",
+      "highlight_file": "highlight-state-01-wet.png",
+      "segmentTopY": 132.0,
+      "segmentHeight": 32.666666666666664
+    },
+    {
+      "id": 2,
+      "label": "适宜",
+      "file": "state-02-suitable.png",
+      "highlight_file": "highlight-state-02-suitable.png",
+      "segmentTopY": 164.66666666666666,
+      "segmentHeight": 32.666666666666664
+    },
+    {
+      "id": 3,
+      "label": "偏干",
+      "file": "state-03-dry.png",
+      "highlight_file": "highlight-state-03-dry.png",
+      "segmentTopY": 197.33333333333331,
+      "segmentHeight": 32.666666666666664
+    }
+  ]
+}

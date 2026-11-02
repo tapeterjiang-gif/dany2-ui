@@ -1,0 +1,80 @@
+{
+  "metric": "PM2.5-PM10",
+  "canvas": {
+    "width": 502,
+    "height": 410
+  },
+  "slice": {
+    "x": 457,
+    "y": 130,
+    "width": 16,
+    "height": 102
+  },
+  "scale4x": {
+    "x": 1828,
+    "y": 520,
+    "width": 64,
+    "height": 408
+  },
+  "track": {
+    "x": 461,
+    "y": 132,
+    "width": 8,
+    "height": 98
+  },
+  "active_glass": {
+    "x": 459.4,
+    "width": 11.2
+  },
+  "order": "top to bottom",
+  "states": [
+    {
+      "id": 1,
+      "label": "极差",
+      "file": "state-01-extremely-poor.png",
+      "highlight_file": "highlight-state-01-extremely-poor.png",
+      "segmentTopY": 132.0,
+      "segmentHeight": 16.333333333333332
+    },
+    {
+      "id": 2,
+      "label": "很差",
+      "file": "state-02-very-poor.png",
+      "highlight_file": "highlight-state-02-very-poor.png",
+      "segmentTopY": 148.33333333333334,
+      "segmentHeight": 16.333333333333332
+    },
+    {
+      "id": 3,
+      "label": "差",
+      "file": "state-03-poor.png",
+      "highlight_file": "highlight-state-03-poor.png",
+      "segmentTopY": 164.66666666666666,
+      "segmentHeight": 16.333333333333332
+    },
+    {
+      "id": 4,
+      "label": "中等",
+      "file": "state-04-moderate.png",
+      "highlight_file": "highlight-state-04-moderate.png",
+      "segmentTopY": 181.0,
+      "segmentHeight": 16.333333333333332
+    },
+    {
+      "id": 5,
+      "label": "尚可",
+      "file": "state-05-fair.png",
+      "highlight_file": "highlight-state-05-fair.png",
+      "segmentTopY": 197.33333333333331,
+      "segmentHeight": 16.333333333333332
+    },
+    {
+      "id": 6,
+      "label": "好",
+      "file": "state-06-good.png",
+      "highlight_file": "highlight-state-06-good.png",
+      "segmentTopY": 213.66666666666666,
+      "segmentHeight": 16.333333333333332
+    }
+  ]
+}

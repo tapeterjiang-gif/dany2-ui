@@ -1,0 +1,88 @@
+{
+  "metric": "温度",
+  "canvas": {
+    "width": 502,
+    "height": 410
+  },
+  "slice": {
+    "x": 457,
+    "y": 130,
+    "width": 16,
+    "height": 102
+  },
+  "scale4x": {
+    "x": 1828,
+    "y": 520,
+    "width": 64,
+    "height": 408
+  },
+  "track": {
+    "x": 461,
+    "y": 132,
+    "width": 8,
+    "height": 98
+  },
+  "active_glass": {
+    "x": 459.4,
+    "width": 11.2
+  },
+  "order": "top to bottom",
+  "states": [
+    {
+      "id": 1,
+      "label": "热",
+      "file": "state-01-hot.png",
+      "highlight_file": "highlight-state-01-hot.png",
+      "segmentTopY": 132.0,
+      "segmentHeight": 14.0
+    },
+    {
+      "id": 2,
+      "label": "暖",
+      "file": "state-02-warm.png",
+      "highlight_file": "highlight-state-02-warm.png",
+      "segmentTopY": 146.0,
+      "segmentHeight": 14.0
+    },
+    {
+      "id": 3,
+      "label": "微暖",
+      "file": "state-03-slightly-warm.png",
+      "highlight_file": "highlight-state-03-slightly-warm.png",
+      "segmentTopY": 160.0,
+      "segmentHeight": 14.0
+    },
+    {
+      "id": 4,
+      "label": "中性",
+      "file": "state-04-neutral.png",
+      "highlight_file": "highlight-state-04-neutral.png",
+      "segmentTopY": 174.0,
+      "segmentHeight": 14.0
+    },
+    {
+      "id": 5,
+      "label": "微凉",
+      "file": "state-05-slightly-cool.png",
+      "highlight_file": "highlight-state-05-slightly-cool.png",
+      "segmentTopY": 188.0,
+      "segmentHeight": 14.0
+    },
+    {
+      "id": 6,
+      "label": "凉",
+      "file": "state-06-cool.png",
+      "highlight_file": "highlight-state-06-cool.png",
+      "segmentTopY": 202.0,
+      "segmentHeight": 14.0
+    },
+    {
+      "id": 7,
+      "label": "冷",
+      "file": "state-07-cold.png",
+      "highlight_file": "highlight-state-07-cold.png",
+      "segmentTopY": 216.0,
+      "segmentHeight": 14.0
+    }
+  ]
+}
