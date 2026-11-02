@@ -1,0 +1,105 @@
+{
+  "canvas": [
+    502,
+    410
+  ],
+  "title": {
+    "x": 28,
+    "baseline": 117,
+    "size": 19,
+    "weight": 600
+  },
+  "reading": {
+    "x": 26,
+    "baseline": 234,
+    "size": 116,
+    "tracking": -6.444444,
+    "weight": 600
+  },
+  "units": {
+    "temperature": {
+      "x": 250,
+      "baseline": 234,
+      "size": 40
+    },
+    "humidity": {
+      "x": 166,
+      "baseline": 234,
+      "size": 40
+    },
+    "co2": {
+      "x": 290,
+      "baseline": 234,
+      "size": 36
+    },
+    "pm": {
+      "x": "dynamic",
+      "baseline": 234,
+      "size": 36
+    }
+  },
+  "rating": {
+    "slice": [
+      459,
+      138,
+      16,
+      102
+    ],
+    "track": [
+      463,
+      140,
+      8,
+      98
+    ],
+    "activeGlassX": 461.4,
+    "motionOrigin": [
+      467,
+      189
+    ]
+  },
+  "pm": {
+    "left": 22,
+    "baseline": 234,
+    "rightLimit": 452,
+    "sizes": [
+      116,
+      104,
+      88
+    ],
+    "slashRatio": 0.69,
+    "gaps": [
+      6,
+      6,
+      8
+    ],
+    "slashSizes": [
+      81,
+      72,
+      61
+    ]
+  },
+  "runtime": "Coordinates for reference readings; measure updated single values and place units after the measured advance with at least 14px gap. If the reserved unit edge x452 is exceeded, decrease tracking or handle overflow per product range rules; never overlap the rating.",
+  "co2Subscript": {
+    "x": 56.5,
+    "baseline": 123,
+    "size": 16
+  },
+  "fontSizeRule": "integer pixels, ceil computed sizes",
+  "status": {
+    "visibleCenterY": 22,
+    "time": {
+      "x": 305.5,
+      "baseline": 32.125,
+      "size": 28
+    },
+    "paginationCenters": [
+      161.5,
+      182.5,
+      203.5,
+      224.5,
+      245.5,
+      266.5
+    ],
+    "paginationY": 22
+  }
+}

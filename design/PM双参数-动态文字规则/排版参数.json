@@ -5,25 +5,36 @@
   ],
   "format": "integer, no leading zeros",
   "font": "Roboto SemiBold",
-  "number_size_max": 108,
-  "number_size_min": 84,
+  "number_size_max": 116,
+  "number_size_min": 88,
   "tracking_ratio": -0.05555555555555555,
-  "slash_size_ratio": 0.7592592592592593,
-  "baseline": 223,
-  "left": 26,
-  "right_limit": 440,
+  "slash_size_ratio": 0.69,
+  "baseline": 234,
+  "left": 22,
+  "right_limit": 452,
   "gaps": [
-    10,
-    10,
-    14
+    6,
+    6,
+    8
   ],
-  "unit_size": 30,
-  "x_rule": "measure both values and separator at each trial size; choose largest integer fontSize <=108 whose endX <=440; both values use same size",
+  "unit_size": 36,
+  "x_rule": "Select 116/104/88 by total digit count; measure and place sequentially; endX <=452",
   "reference_file": "pm-text-layout.js",
   "metrics": {
     "digitAdvanceEm": 0.5712890625,
     "slashAdvanceEm": 0.38037109375,
-    "unitWidth": 83.84765625,
+    "unitWidth": 100.6171875,
     "version": "Version 3.015; 2026"
-  }
+  },
+  "number_sizes": {
+    "up_to_4_digits_total": 116,
+    "2+3_or_3+2": 104,
+    "3+3": 88
+  },
+  "slash_size_rule": "ceil(numberSize * 0.69)",
+  "slash_sizes": [
+    81,
+    72,
+    61
+  ]
 }

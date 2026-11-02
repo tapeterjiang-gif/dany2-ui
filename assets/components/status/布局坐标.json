@@ -20,70 +20,105 @@
   },
   "batteryFill": {
     "relativeToSlice": {
-      "x": 4.5,
-      "y": 4.5,
-      "maxWidth": 19,
-      "height": 8,
-      "radius": 0.8
+      "x": 7.6,
+      "y": 8.6,
+      "maxWidth": 30.4,
+      "height": 12.8,
+      "radius": 1.28
     },
     "relativeToScreen": {
-      "x": 413.5,
-      "y": 16.5,
-      "maxWidth": 19,
-      "height": 8
+      "x": 392.6,
+      "y": 15.6,
+      "maxWidth": 30.4,
+      "height": 12.8
     },
     "suggestedColor": "#22C55E",
-    "formula": "width = 19 * clamp(level, 0, 100) / 100",
+    "formula": "width = 30.4 * clamp(level, 0, 100) / 100",
     "drawOrder": "program fill, then empty frame"
   },
   "assets": [
     {
       "name": "wifi-signal-0",
       "group": "Wi-Fi",
-      "x": 52,
-      "y": 10,
-      "width": 28,
-      "height": 22
+      "x": 57,
+      "y": 5,
+      "width": 40,
+      "height": 32
     },
     {
       "name": "wifi-signal-1",
       "group": "Wi-Fi",
-      "x": 52,
-      "y": 10,
-      "width": 28,
-      "height": 22
+      "x": 57,
+      "y": 5,
+      "width": 40,
+      "height": 32
     },
     {
       "name": "wifi-signal-2",
       "group": "Wi-Fi",
-      "x": 52,
-      "y": 10,
-      "width": 28,
-      "height": 22
+      "x": 57,
+      "y": 5,
+      "width": 40,
+      "height": 32
     },
     {
       "name": "wifi-signal-3",
       "group": "Wi-Fi",
-      "x": 52,
-      "y": 10,
-      "width": 28,
-      "height": 22
+      "x": 57,
+      "y": 5,
+      "width": 40,
+      "height": 32
     },
     {
       "name": "bluetooth",
       "group": "Bluetooth",
-      "x": 86,
-      "y": 10,
-      "width": 14,
-      "height": 22
+      "x": 104,
+      "y": 5,
+      "width": 21,
+      "height": 32
     },
     {
       "name": "battery-empty",
       "group": "Battery",
-      "x": 409,
-      "y": 12,
-      "width": 31,
-      "height": 18
+      "x": 385,
+      "y": 7,
+      "width": 50,
+      "height": 30
     }
-  ]
+  ],
+  "revision": "2026-11-02 / 28px time and enlarged battery",
+  "iconScale": 1.4,
+  "outerAnchors": {
+    "left": 57,
+    "right": 435,
+    "note": "原左侧52→57；原右侧440→435。切图含整数像素透明留白。"
+  },
+  "time": {
+    "font": "Roboto Regular",
+    "size": 28,
+    "x": 305.5,
+    "baseline": 32.125,
+    "color": "#FFFFFF"
+  },
+  "pagination": {
+    "centers": [
+      161.5,
+      182.5,
+      203.5,
+      224.5,
+      245.5,
+      266.5
+    ],
+    "centerY": 22,
+    "dotDiameter": 7,
+    "activeWidth": 18.2,
+    "activeHeight": 7,
+    "radius": 3.5
+  },
+  "alignment": {
+    "visibleCenterY": 22,
+    "paginationCenterX": 214,
+    "note": "Visible contours aligned, not transparent PNG bounds. Pagination balanced between left connectivity and right time/battery."
+  },
+  "batteryScale": 1.6
 }

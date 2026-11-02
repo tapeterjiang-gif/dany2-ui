@@ -26,3 +26,5 @@
 - design/：当前页面参考、开发组件和规格资料。
 
 字体许可见 assets/fonts/Roboto-OFL.txt 与 assets/fonts/NotoSansCJKsc-LICENSE.txt。发布来源为main分支根目录，GitHub Pages自动部署。
+
+最新更新：状态栏时间28px、电池适度放大并统一视觉对齐；默认读数116px，PM双参数116/104/88px，CO₂与PM单位36px，CO₂下标16px；所有字号为整数。页面效果、组件切图与开发坐标同步更新。
