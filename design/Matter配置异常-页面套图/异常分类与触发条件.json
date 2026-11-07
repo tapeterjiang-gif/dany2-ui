@@ -1,0 +1,74 @@
+[
+  {
+    "id": "01",
+    "phase": "发现与安全配对",
+    "en": "Pairing timed out",
+    "zh": "配对超时",
+    "trigger": "已开始配对但未在有效时间内完成；仅停留在二维码页、无人添加时不弹出错误。",
+    "event": "实际配对会话超时；不以空闲配对窗口到期作为失败依据。",
+    "visibility": "设备可观测"
+  },
+  {
+    "id": "02",
+    "phase": "发现与安全配对",
+    "en": "Pairing failed",
+    "zh": "安全配对失败",
+    "trigger": "PASE 安全会话建立失败，可能与配对信息或会话中断有关。",
+    "event": "安全会话失败事件；不将普通超时直接解释为配对码错误。",
+    "visibility": "设备可观测"
+  },
+  {
+    "id": "03",
+    "phase": "设备验证",
+    "en": "Verification failed",
+    "zh": "设备验证失败",
+    "trigger": "App 在设备认证或证明阶段拒绝继续。",
+    "event": "仅在 App 或平台明确回传设备验证失败时显示；设备端无此信息则使用通用添加失败。",
+    "visibility": "需要明确回传"
+  },
+  {
+    "id": "04",
+    "phase": "连接网络",
+    "en": "Wi-Fi network not found",
+    "zh": "未找到 Wi-Fi 网络",
+    "trigger": "指定网络在扫描或连接时不可用，可能为网络名称变化、信号弱或网络关闭。",
+    "event": "网络扫描/连接明确返回 NetworkNotFound 类结果。",
+    "visibility": "设备可观测"
+  },
+  {
+    "id": "05",
+    "phase": "连接网络",
+    "en": "Wi-Fi connection failed",
+    "zh": "Wi-Fi 连接失败",
+    "trigger": "Wi-Fi 认证或关联失败。认证失败也可能与安全模式等有关，因此不直接断言密码错误。",
+    "event": "Wi-Fi 驱动或网络配置返回认证/关联失败。",
+    "visibility": "设备可观测"
+  },
+  {
+    "id": "06",
+    "phase": "连接网络",
+    "en": "Network setup failed",
+    "zh": "网络地址获取失败",
+    "trigger": "Wi-Fi 已连接，但本地网络地址配置未完成。",
+    "event": "仅在网络栈明确上报地址分配/绑定失败时显示；原因不明使用通用网络连接失败。",
+    "visibility": "需要网络栈确认"
+  },
+  {
+    "id": "07",
+    "phase": "完成添加",
+    "en": "Setup timed out",
+    "zh": "完成添加超时",
+    "trigger": "联网后，操作发现、CASE 或最终 CommissioningComplete 阶段未完成。",
+    "event": "完成阶段超时/Fail-safe 到期。手机、路由器、控制器侧原因不在屏幕上直接断言。",
+    "visibility": "按实际阶段判断"
+  },
+  {
+    "id": "08",
+    "phase": "保存 Matter 连接",
+    "en": "Matter connection limit",
+    "zh": "Matter 连接数量已满",
+    "trigger": "设备的 Matter Fabric 存储容量已满，无法添加新的连接。",
+    "event": "仅在明确收到 Fabric 表容量不足事件时显示，不使用“已被绑定”替代容量判断。",
+    "visibility": "设备可观测"
+  }
+]

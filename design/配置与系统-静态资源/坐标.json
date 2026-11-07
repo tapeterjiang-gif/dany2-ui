@@ -30,10 +30,10 @@
     ]
   },
   "wordmark": {
-    "x": 121,
-    "y": 172.23545179022884,
-    "width": 260,
-    "height": 66
+    "x": 91,
+    "y": 164,
+    "width": 320,
+    "height": 82
   },
   "units": "1x PNG top-left x,y,width,height; 4x files displayed at 1x use same coordinates"
 }

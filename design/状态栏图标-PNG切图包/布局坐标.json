@@ -27,7 +27,7 @@
       "radius": 1.28
     },
     "relativeToScreen": {
-      "x": 392.6,
+      "x": 390.6,
       "y": 15.6,
       "maxWidth": 30.4,
       "height": 12.8
@@ -40,7 +40,7 @@
     {
       "name": "wifi-signal-0",
       "group": "Wi-Fi",
-      "x": 57,
+      "x": 59,
       "y": 5,
       "width": 40,
       "height": 32
@@ -48,7 +48,7 @@
     {
       "name": "wifi-signal-1",
       "group": "Wi-Fi",
-      "x": 57,
+      "x": 59,
       "y": 5,
       "width": 40,
       "height": 32
@@ -56,7 +56,7 @@
     {
       "name": "wifi-signal-2",
       "group": "Wi-Fi",
-      "x": 57,
+      "x": 59,
       "y": 5,
       "width": 40,
       "height": 32
@@ -64,7 +64,7 @@
     {
       "name": "wifi-signal-3",
       "group": "Wi-Fi",
-      "x": 57,
+      "x": 59,
       "y": 5,
       "width": 40,
       "height": 32
@@ -72,7 +72,7 @@
     {
       "name": "bluetooth",
       "group": "Bluetooth",
-      "x": 104,
+      "x": 106,
       "y": 5,
       "width": 21,
       "height": 32
@@ -80,7 +80,7 @@
     {
       "name": "battery-empty",
       "group": "Battery",
-      "x": 385,
+      "x": 383,
       "y": 7,
       "width": 50,
       "height": 30
@@ -89,14 +89,14 @@
   "revision": "2026-11-02 / 28px time and enlarged battery",
   "iconScale": 1.4,
   "outerAnchors": {
-    "left": 57,
-    "right": 435,
-    "note": "原左侧52→57；原右侧440→435。切图含整数像素透明留白。"
+    "left": 59,
+    "right": 433,
+    "note": "两侧各向内收2px，切图含透明留白。"
   },
   "time": {
     "font": "Roboto Regular",
     "size": 28,
-    "x": 305.5,
+    "x": 303.5,
     "baseline": 32.125,
     "color": "#FFFFFF"
   },

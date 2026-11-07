@@ -1,0 +1,35 @@
+{
+  "canvas": [
+    502,
+    410
+  ],
+  "wordmark": {
+    "x": 91,
+    "y": 164,
+    "width": 320,
+    "height": 82
+  },
+  "text": {
+    "english": {
+      "size": 22,
+      "centerX": 251,
+      "baseline": 324,
+      "color": "#C7CFC5"
+    },
+    "chinese": {
+      "size": 18,
+      "centerX": 251,
+      "baseline": 354,
+      "color": "#A0ACA0"
+    }
+  },
+  "loadingDots": {
+    "centersX": [
+      237,
+      251,
+      265
+    ],
+    "y": 282,
+    "radius": 2.8
+  }
+}

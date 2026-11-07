@@ -1,0 +1,368 @@
+{
+  "version": "2026-11-08-screensaver-final",
+  "canvas": {
+    "width": 502,
+    "height": 410,
+    "cornerRadius": 82,
+    "background": "#000000"
+  },
+  "fonts": {
+    "family": "Roboto",
+    "regular": 400,
+    "semibold": 600,
+    "license": "SIL OFL 1.1"
+  },
+  "header": {
+    "time": {
+      "x": 44,
+      "baseline": 33,
+      "size": 16,
+      "weight": 400
+    },
+    "duration": {
+      "rightX": 458,
+      "baseline": 33,
+      "size": 16,
+      "weight": 400
+    },
+    "color": "#C7CFD5",
+    "separatorY": 51
+  },
+  "rows": [
+    {
+      "id": "temperature",
+      "name": "TEMP",
+      "centerY": 86,
+      "title": {
+        "x": 62,
+        "baseline": 68,
+        "size": 10,
+        "weight": 600,
+        "anchor": "middle",
+        "color": "#F97316",
+        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
+      },
+      "capsule": {
+        "x": 16,
+        "y": 78,
+        "width": 92,
+        "height": 30,
+        "radius": 15,
+        "fill": "#16A34A",
+        "fillOpacity": 0.16,
+        "strokeOpacity": 0.38,
+        "strokeWidth": 0.8,
+        "text": "Neutral",
+        "textX": 62,
+        "textBaseline": 98,
+        "textSize": 16,
+        "textWeight": 600,
+        "textWhiteMix": 0.2
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 108,
+        "size": 50,
+        "weight": 400,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "°C",
+        "exampleX": 214,
+        "baseline": 108,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 108,
+        "height": 49,
+        "exampleDomain": [
+          20,
+          28
+        ]
+      },
+      "separatorY": 118
+    },
+    {
+      "id": "humidity",
+      "name": "RH",
+      "centerY": 151,
+      "title": {
+        "x": 62,
+        "baseline": 134,
+        "size": 10,
+        "weight": 600,
+        "anchor": "middle",
+        "color": "#0891B2",
+        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
+      },
+      "capsule": {
+        "x": 16,
+        "y": 143,
+        "width": 92,
+        "height": 30,
+        "radius": 15,
+        "fill": "#16A34A",
+        "fillOpacity": 0.16,
+        "strokeOpacity": 0.38,
+        "strokeWidth": 0.8,
+        "text": "Comfort",
+        "textX": 62,
+        "textBaseline": 163,
+        "textSize": 16,
+        "textWeight": 600,
+        "textWhiteMix": 0.2
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 173,
+        "size": 50,
+        "weight": 400,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "%RH",
+        "exampleX": 173,
+        "baseline": 173,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 173,
+        "height": 49,
+        "exampleDomain": [
+          40,
+          70
+        ]
+      },
+      "separatorY": 183
+    },
+    {
+      "id": "co2",
+      "name": "CO₂",
+      "centerY": 216,
+      "title": {
+        "x": 62,
+        "baseline": 199,
+        "size": 10,
+        "weight": 600,
+        "anchor": "middle",
+        "color": "#15803D",
+        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
+      },
+      "capsule": {
+        "x": 16,
+        "y": 208,
+        "width": 92,
+        "height": 30,
+        "radius": 15,
+        "fill": "#16A34A",
+        "fillOpacity": 0.16,
+        "strokeOpacity": 0.38,
+        "strokeWidth": 0.8,
+        "text": "Good",
+        "textX": 62,
+        "textBaseline": 228,
+        "textSize": 16,
+        "textWeight": 600,
+        "textWhiteMix": 0.2
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 238,
+        "size": 50,
+        "weight": 400,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "ppm",
+        "exampleX": 200,
+        "baseline": 238,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 238,
+        "height": 49,
+        "exampleDomain": [
+          0,
+          1500
+        ]
+      },
+      "separatorY": 248
+    },
+    {
+      "id": "pm25",
+      "name": "PM2.5",
+      "centerY": 281,
+      "title": {
+        "x": 62,
+        "baseline": 264,
+        "size": 10,
+        "weight": 600,
+        "anchor": "middle",
+        "color": "#667A83",
+        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
+      },
+      "capsule": {
+        "x": 16,
+        "y": 273,
+        "width": 92,
+        "height": 30,
+        "radius": 15,
+        "fill": "#CA8A04",
+        "fillOpacity": 0.16,
+        "strokeOpacity": 0.38,
+        "strokeWidth": 0.8,
+        "text": "Moderate",
+        "textX": 62,
+        "textBaseline": 293,
+        "textSize": 16,
+        "textWeight": 600,
+        "textWhiteMix": 0.2
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 303,
+        "size": 50,
+        "weight": 400,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "μg/m³",
+        "exampleX": 173,
+        "baseline": 303,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 303,
+        "height": 49,
+        "exampleDomain": [
+          0,
+          60
+        ]
+      },
+      "separatorY": 313
+    },
+    {
+      "id": "pm10",
+      "name": "PM10",
+      "centerY": 346,
+      "title": {
+        "x": 62,
+        "baseline": 329,
+        "size": 10,
+        "weight": 600,
+        "anchor": "middle",
+        "color": "#9A7958",
+        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
+      },
+      "capsule": {
+        "x": 16,
+        "y": 338,
+        "width": 92,
+        "height": 30,
+        "radius": 15,
+        "fill": "#65A30D",
+        "fillOpacity": 0.16,
+        "strokeOpacity": 0.38,
+        "strokeWidth": 0.8,
+        "text": "Fair",
+        "textX": 62,
+        "textBaseline": 358,
+        "textSize": 16,
+        "textWeight": 600,
+        "textWhiteMix": 0.2
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 368,
+        "size": 50,
+        "weight": 400,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "μg/m³",
+        "exampleX": 173,
+        "baseline": 368,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 368,
+        "height": 49,
+        "exampleDomain": [
+          0,
+          60
+        ]
+      },
+      "separatorY": 378
+    }
+  ],
+  "plots": {
+    "x": 252,
+    "right": 461.98,
+    "width": 209.98,
+    "samples": 24,
+    "step": 8.86,
+    "barWidth": 6.2,
+    "topRadius": 1.5,
+    "bottomCorners": "square",
+    "fill": "grade color; top opacity 1, bottom opacity 0.84"
+  },
+  "meanLines": {
+    "x": 252,
+    "right": 462,
+    "width": 0.7,
+    "dash": [
+      4,
+      4
+    ],
+    "linecap": "butt",
+    "opacity": 0.72,
+    "color": "mean grade color mixed with 16% white",
+    "outline": false,
+    "numericLabels": false
+  },
+  "rulers": {
+    "ticksX": [
+      252,
+      353,
+      454
+    ],
+    "tickY": [
+      378,
+      382
+    ],
+    "labelBaseline": 396,
+    "fontSize": 10,
+    "color": "#929A9F",
+    "anchor": "middle",
+    "exampleLabels": [
+      "10:00",
+      "22:00",
+      "10:00"
+    ]
+  },
+  "dynamicReading": {
+    "left": 112,
+    "right": 242,
+    "defaultSize": 50,
+    "minSize": 20,
+    "unitSize": 18,
+    "gap": 6,
+    "tracking": -0.6
+  },
+  "exampleOnly": true
+}

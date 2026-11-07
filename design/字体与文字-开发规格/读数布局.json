@@ -6,36 +6,36 @@
   "title": {
     "x": 28,
     "baseline": 117,
-    "size": 19,
+    "size": 30,
     "weight": 600
   },
   "reading": {
     "x": 26,
-    "baseline": 234,
-    "size": 116,
-    "tracking": -6.444444,
+    "baseline": 238,
+    "size": 124,
+    "tracking": -6.888889,
     "weight": 600
   },
   "units": {
     "temperature": {
-      "x": 250,
-      "baseline": 234,
-      "size": 40
+      "x": 266,
+      "baseline": 238,
+      "size": 48
     },
     "humidity": {
-      "x": 166,
-      "baseline": 234,
-      "size": 40
+      "x": 176,
+      "baseline": 238,
+      "size": 48
     },
     "co2": {
-      "x": 290,
-      "baseline": 234,
-      "size": 36
+      "x": 309,
+      "baseline": 238,
+      "size": 42
     },
     "pm": {
       "x": "dynamic",
-      "baseline": 234,
-      "size": 36
+      "baseline": 238,
+      "size": 42
     }
   },
   "rating": {
@@ -58,37 +58,37 @@
     ]
   },
   "pm": {
-    "left": 22,
-    "baseline": 234,
-    "rightLimit": 452,
+    "left": 16,
+    "baseline": 238,
+    "rightLimit": 458,
     "sizes": [
-      116,
-      104,
-      88
+      124,
+      108,
+      92
     ],
-    "slashRatio": 0.69,
+    "slashRatio": 0.55,
     "gaps": [
-      6,
-      6,
-      8
+      3,
+      3,
+      3
     ],
     "slashSizes": [
-      81,
-      72,
-      61
+      69,
+      60,
+      51
     ]
   },
-  "runtime": "Coordinates for reference readings; measure updated single values and place units after the measured advance with at least 14px gap. If the reserved unit edge x452 is exceeded, decrease tracking or handle overflow per product range rules; never overlap the rating.",
+  "runtime": "Reference single-value coordinates use baseline238. Measure dynamic single values and place units with at least14px gap. PM uses supplied layout function and endX<=458; never overlap rating at x461.4.",
   "co2Subscript": {
-    "x": 56.5,
+    "x": 69,
     "baseline": 123,
-    "size": 16
+    "size": 26
   },
   "fontSizeRule": "integer pixels, ceil computed sizes",
   "status": {
     "visibleCenterY": 22,
     "time": {
-      "x": 305.5,
+      "x": 303.5,
       "baseline": 32.125,
       "size": 28
     },

@@ -1,30 +1,31 @@
-# Dany 2 UI 定版 · 2026-11-02
+# Dany 2 UI · 2026-11-08 定稿
 
-- 屏幕：502×410 px，1.96英寸AMOLED；纯黑底与圆角适配。
-- 六个功能页面：温度、相对湿度、CO₂、PM2.5/PM10、Qingping添加、Matter添加；另含开关机与屏保设计。
-- 字体：Roboto Regular 400、Roboto SemiBold 600、Noto Sans CJK SC Regular 400；附原始SIL OFL许可与版本来源。
-- PM参考图：999 / 999 μg/m³，极差档。两项量程0–999，按Roboto实际字宽动态排版；短组合108px，2+3/3+2位99px，3+3位84px。
-- 评级指示器：温度7档、相对湿度3档、CO₂ 3档、PM 6档；玻璃高光已减弱，配套完整状态及独立底色/高光。
-- 状态栏图标：Wi-Fi四档、蓝牙一个、空电池；电量填充与时间由程序绘制。
-- 趋势图：程序绘制，仅交付单柱与双柱柱顶圆角、坐标与指南；文字和数字也由程序绘制。
-- 主介绍页直接展示切图、坐标、字体和接入指南，附离线下载与交互动效。按钮切换800ms；手势吸附220–300ms。
-- 产品效果：六个功能页面及开关机状态的正视、斜视，共16张。
+Dany 2空气检测仪的界面设计、产品效果与开发交付。502×410px，1.96英寸AMOLED，纯黑背景与圆角适配。
 
-监测数据为设计示例；Matter二维码和配对码为演示，实机应由设备生成。Qingping二维码为App下载链接。产品效果为照片合成参考。
+公开介绍：https://tapeterjiang-gif.github.io/dany2-ui/
 
-当前公开页面：https://tapeterjiang-gif.github.io/dany2-ui/
+## 页面
+
+- index.html：监测界面、交互动效、开发组件与字体规格。
+- configuration.html：Qingping App与Matter配置流程、状态及异常说明。
+- screensaver.html：五行状态列表屏保、产品效果及完整开发交付。
+- power.html：开关机界面与产品效果。
+
+## 屏保定稿
+
+依次显示温度、湿度、CO₂、PM2.5、PM10。读数50px，标题10px且水平/垂直居中；独立评级胶囊92×30px、文字16px。胶囊、读数与趋势图下沿对齐。趋势图24根单柱，按等级色绘制，平均线无黑色描边，底部显示HH:mm刻度，绘图区x252–461.98。
 
 ## 开发与离线使用
 
-直接打开 index.html，或运行 python3 -m http.server 8000。页面、字体与素材均可本地使用。
+直接打开HTML，或运行 `python3 -m http.server 8000`。页面、字体与素材均可本地使用。
 
-- index.html：设计说明、交互演示、组件预览和开发指南。
-- motion.js：整页滑动与分层动效。
-- pm-text-layout.js / pm-type-demo.js：PM动态测宽与排版演示。
-- assets/：当前PNG、开源字体、许可和下载包。
-- motion-assets/：网页动效所用透明图层，不作为设备端趋势图交付。
-- design/：当前页面参考、开发组件和规格资料。
+- assets/：当前PNG、产品效果、字体与ZIP下载包。
+- assets/components/screensaver/：屏保字体、柱顶与胶囊蒙版、布局JSON、动态读数代码及绘制指南。
+- motion-assets/、motion.js：网页演示图层及动效逻辑。
+- design/：当前设计页面、配置流程、组件与规格资料。
 
-字体许可见 assets/fonts/Roboto-OFL.txt 与 assets/fonts/NotoSansCJKsc-LICENSE.txt。发布来源为main分支根目录，GitHub Pages自动部署。
+字体为Roboto Regular/SemiBold及Noto Sans CJK SC，附原始SIL OFL许可。整页PNG为视觉参考；设备文字、时间及趋势图由程序绘制。屏幕不支持触摸，通过顶部触摸条点击和滑动。
 
-最新更新：状态栏时间28px、电池适度放大并统一视觉对齐；默认读数116px，PM双参数116/104/88px，CO₂与PM单位36px，CO₂下标16px；所有字号为整数。页面效果、组件切图与开发坐标同步更新。
+监测数据、Matter二维码与配对码为演示，产品效果为照片合成。实机配对信息由设备生成。
+
+GitHub Pages从main分支根目录发布。

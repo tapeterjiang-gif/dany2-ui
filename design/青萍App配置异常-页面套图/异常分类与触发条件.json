@@ -1,0 +1,74 @@
+[
+  {
+    "id": "01",
+    "phase": "连接手机与接收配置",
+    "en": "Phone connection lost",
+    "zh": "手机连接中断",
+    "trigger": "设备已与青萍 App 建立配置连接，接收配置完成前连接意外断开。",
+    "event": "活动配置会话的连接中断事件。提交配置后的正常断开不视为异常；空闲等待时也不弹出。",
+    "visibility": "需要配置连接事件"
+  },
+  {
+    "id": "02",
+    "phase": "连接手机与接收配置",
+    "en": "Setup data not received",
+    "zh": "配置数据接收失败",
+    "trigger": "与青萍 App 连接已建立，但必要的配置数据未完整接收或无法校验。",
+    "event": "配置接收完成后明确校验失败，或已开始的数据传输超时。普通等待添加不触发。",
+    "visibility": "需要配置协议确认"
+  },
+  {
+    "id": "03",
+    "phase": "连接 Wi-Fi",
+    "en": "Wi-Fi network not found",
+    "zh": "未找到 Wi-Fi 网络",
+    "trigger": "设备无法找到青萍 App 指定的无线网络。",
+    "event": "网络扫描或连接明确返回指定网络不存在。不能从普通连接超时推断。",
+    "visibility": "设备可观测"
+  },
+  {
+    "id": "04",
+    "phase": "连接 Wi-Fi",
+    "en": "Wi-Fi connection failed",
+    "zh": "Wi-Fi 连接失败",
+    "trigger": "指定 Wi-Fi 网络的认证或关联失败。",
+    "event": "Wi-Fi 驱动明确上报认证或关联失败。不直接认定为密码错误。",
+    "visibility": "设备可观测"
+  },
+  {
+    "id": "05",
+    "phase": "连接 Wi-Fi",
+    "en": "Network setup failed",
+    "zh": "网络地址获取失败",
+    "trigger": "Wi-Fi 已连接，但设备的本地网络地址配置未能完成。",
+    "event": "网络栈明确上报地址配置失败。原因不明确时显示通用添加失败。",
+    "visibility": "需要网络栈确认"
+  },
+  {
+    "id": "06",
+    "phase": "连接青萍服务与完成添加",
+    "en": "Qingping service unavailable",
+    "zh": "青萍服务连接失败",
+    "trigger": "网络地址已配置，但配置流程所需的青萍服务连接未建立。",
+    "event": "仅在配置流程确实需要设备连接青萍服务，且明确上报服务连接失败时显示。不能据此认定服务器故障或断网。",
+    "visibility": "需要确认服务架构"
+  },
+  {
+    "id": "07",
+    "phase": "连接青萍服务与完成添加",
+    "en": "Qingping app setup failed",
+    "zh": "青萍 App 添加失败",
+    "trigger": "添加被明确拒绝，或配置失败但无法确认更具体的原因。",
+    "event": "设备接收到添加失败结果，或配置会话返回不可细分的失败。若添加结果只在 App 侧，需回传后显示。",
+    "visibility": "通用失败与结果回传"
+  },
+  {
+    "id": "08",
+    "phase": "连接青萍服务与完成添加",
+    "en": "Qingping app setup timed out",
+    "zh": "青萍 App 添加超时",
+    "trigger": "配置已开始，但在规定时间内没有取得最终添加结果。",
+    "event": "实际配置会话的完成计时超时。等待 App 发起添加时不触发；具体阈值由固件协议定义。",
+    "visibility": "需要确认完成事件"
+  }
+]
