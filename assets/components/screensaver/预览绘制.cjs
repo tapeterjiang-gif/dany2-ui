@@ -71,8 +71,8 @@ displayOrder.forEach((sourceIndex, index) => {
   const averagePMV = Array.from({ length: 24 }, (_, hour) => interpolate(pmv, hour)).reduce((sum, value) => sum + value, 0) / 24;
   const averageColor = sourceIndex === 0 ? (averagePMV > 0.5 ? '#CA8A04' : '#16A34A') : chart.color(average);
   body += `<path d="M252 ${averageY} H462" stroke="${tint(averageColor, 0.16)}" stroke-width="0.7" stroke-opacity="0.72" stroke-dasharray="4 4" stroke-linecap="butt"/>`;
-  body += text(row.value, 112, center + 22, 50, '#F5F7F8', 400, 'start', 'letter-spacing="-0.6"');
-  const unitX = { TEMP: 214, RH: 173, 'PM2.5': 173, PM10: 173, 'CO₂': 200 }[row.name];
+  body += text(row.value, 112, center + 22, 50, '#F5F7F8', 600, 'start', 'letter-spacing="-0.6"');
+  const unitX = { TEMP: 216, RH: 174, 'PM2.5': 174, PM10: 174, 'CO₂': 202 }[row.name];
   body += text(row.unit, unitX, center + 22, 18, '#F5F7F8');
 
   body += `<path d="M23 ${center + 32} H479" stroke="url(#separator)" stroke-width="0.7"/>`;

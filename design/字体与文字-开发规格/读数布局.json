@@ -51,11 +51,14 @@
       8,
       98
     ],
-    "activeGlassX": 461.4,
     "motionOrigin": [
       467,
       189
-    ]
+    ],
+    "activeHighlightX": 461.5,
+    "activeHighlightWidth": 11,
+    "style": "flat",
+    "inactiveOpacity": 0.78
   },
   "pm": {
     "left": 16,

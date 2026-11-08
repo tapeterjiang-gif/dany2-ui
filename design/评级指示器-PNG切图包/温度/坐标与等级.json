@@ -20,11 +20,8 @@
     "x": 463,
     "y": 140,
     "width": 8,
-    "height": 98
-  },
-  "active_glass": {
-    "x": 461.4,
-    "width": 11.2
+    "height": 98,
+    "opacity": 0.78
   },
   "order": "top to bottom",
   "states": [
@@ -34,7 +31,8 @@
       "file": "state-01-hot.png",
       "highlight_file": "highlight-state-01-hot.png",
       "segmentTopY": 140.0,
-      "segmentHeight": 14.0
+      "segmentHeight": 14.0,
+      "highlightColor": "#F45C5C"
     },
     {
       "id": 2,
@@ -42,7 +40,8 @@
       "file": "state-02-warm.png",
       "highlight_file": "highlight-state-02-warm.png",
       "segmentTopY": 154.0,
-      "segmentHeight": 14.0
+      "segmentHeight": 14.0,
+      "highlightColor": "#FF944D"
     },
     {
       "id": 3,
@@ -50,7 +49,8 @@
       "file": "state-03-slightly-warm.png",
       "highlight_file": "highlight-state-03-slightly-warm.png",
       "segmentTopY": 168.0,
-      "segmentHeight": 14.0
+      "segmentHeight": 14.0,
+      "highlightColor": "#E8BE43"
     },
     {
       "id": 4,
@@ -58,7 +58,8 @@
       "file": "state-04-neutral.png",
       "highlight_file": "highlight-state-04-neutral.png",
       "segmentTopY": 182.0,
-      "segmentHeight": 14.0
+      "segmentHeight": 14.0,
+      "highlightColor": "#68D991"
     },
     {
       "id": 5,
@@ -66,7 +67,8 @@
       "file": "state-05-slightly-cool.png",
       "highlight_file": "highlight-state-05-slightly-cool.png",
       "segmentTopY": 196.0,
-      "segmentHeight": 14.0
+      "segmentHeight": 14.0,
+      "highlightColor": "#50CEE2"
     },
     {
       "id": 6,
@@ -74,7 +76,8 @@
       "file": "state-06-cool.png",
       "highlight_file": "highlight-state-06-cool.png",
       "segmentTopY": 210.0,
-      "segmentHeight": 14.0
+      "segmentHeight": 14.0,
+      "highlightColor": "#59ADF0"
     },
     {
       "id": 7,
@@ -82,7 +85,16 @@
       "file": "state-07-cold.png",
       "highlight_file": "highlight-state-07-cold.png",
       "segmentTopY": 224.0,
-      "segmentHeight": 14.0
+      "segmentHeight": 14.0,
+      "highlightColor": "#6C8EF6"
     }
-  ]
+  ],
+  "active_highlight": {
+    "x": 461.5,
+    "width": 11,
+    "colorRule": "solid bright tint",
+    "outerCornerRadius": 5.5,
+    "shoulderHeight": 3
+  },
+  "style": "flat / solid highlight / inactive alpha .78"
 }

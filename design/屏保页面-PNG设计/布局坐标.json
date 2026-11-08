@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-08-screensaver-final",
+  "version": "2026-11-08-screensaver-semibold",
   "canvas": {
     "width": 502,
     "height": 410,
@@ -63,13 +63,13 @@
         "x": 112,
         "baseline": 108,
         "size": 50,
-        "weight": 400,
+        "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "°C",
-        "exampleX": 214,
+        "exampleX": 216,
         "baseline": 108,
         "size": 18,
         "weight": 400,
@@ -119,13 +119,13 @@
         "x": 112,
         "baseline": 173,
         "size": 50,
-        "weight": 400,
+        "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "%RH",
-        "exampleX": 173,
+        "exampleX": 174,
         "baseline": 173,
         "size": 18,
         "weight": 400,
@@ -175,13 +175,13 @@
         "x": 112,
         "baseline": 238,
         "size": 50,
-        "weight": 400,
+        "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "ppm",
-        "exampleX": 200,
+        "exampleX": 202,
         "baseline": 238,
         "size": 18,
         "weight": 400,
@@ -231,13 +231,13 @@
         "x": 112,
         "baseline": 303,
         "size": 50,
-        "weight": 400,
+        "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 173,
+        "exampleX": 174,
         "baseline": 303,
         "size": 18,
         "weight": 400,
@@ -287,13 +287,13 @@
         "x": 112,
         "baseline": 368,
         "size": 50,
-        "weight": 400,
+        "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 173,
+        "exampleX": 174,
         "baseline": 368,
         "size": 18,
         "weight": 400,

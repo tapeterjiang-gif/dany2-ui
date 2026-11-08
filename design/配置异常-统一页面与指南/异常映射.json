@@ -1,0 +1,122 @@
+[
+  {
+    "id": "G01",
+    "phase": "三种方式共用",
+    "en": "Setup failed",
+    "zh": "添加失败",
+    "scope": "Matter / 青萍 App / 米家 App",
+    "event": "明确失败但原因无法细分，或没有可用的专属错误事件时使用。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "Matter / 青萍 App / 米家 App"
+  },
+  {
+    "id": "G02",
+    "phase": "三种方式共用",
+    "en": "Setup timed out",
+    "zh": "添加超时",
+    "scope": "Matter / 青萍 App / 米家 App",
+    "event": "实际添加会话已开始，但规定时间内没有完成；空闲等待不触发。优先使用已知具体错误。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "Matter / 青萍 App / 米家 App"
+  },
+  {
+    "id": "G03",
+    "phase": "三种方式共用",
+    "en": "Wi-Fi network not found",
+    "zh": "未找到 Wi-Fi 网络",
+    "scope": "Matter（Wi-Fi） / 青萍 App / 米家 App",
+    "event": "扫描或连接明确返回指定网络不存在；不从超时推断。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "Matter（Wi-Fi） / 青萍 App / 米家 App"
+  },
+  {
+    "id": "G04",
+    "phase": "三种方式共用",
+    "en": "Wi-Fi connection failed",
+    "zh": "Wi-Fi 连接失败",
+    "scope": "Matter（Wi-Fi） / 青萍 App / 米家 App",
+    "event": "Wi-Fi 认证或关联明确失败；不直接断言密码错误。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "Matter（Wi-Fi） / 青萍 App / 米家 App"
+  },
+  {
+    "id": "G05",
+    "phase": "三种方式共用",
+    "en": "Network setup failed",
+    "zh": "网络地址获取失败",
+    "scope": "Matter（Wi-Fi） / 青萍 App / 米家 App",
+    "event": "Wi-Fi 已连接，网络栈明确上报本地地址配置失败。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "Matter（Wi-Fi） / 青萍 App / 米家 App"
+  },
+  {
+    "id": "A01",
+    "phase": "青萍与米家共用",
+    "en": "Phone connection lost",
+    "zh": "手机连接中断",
+    "scope": "青萍 App / 米家 App",
+    "event": "活动配置连接在完成传输前意外断开；交付配置后的正常断开不触发。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "青萍 App / 米家 App"
+  },
+  {
+    "id": "A02",
+    "phase": "青萍与米家共用",
+    "en": "Setup data not received",
+    "zh": "配置数据接收失败",
+    "scope": "青萍 App / 米家 App",
+    "event": "必要配置数据未完整接收、校验明确失败或已开始的数据传输超时；需实际协议事件。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "青萍 App / 米家 App"
+  },
+  {
+    "id": "A03",
+    "phase": "青萍与米家共用",
+    "en": "Service connection failed",
+    "zh": "服务连接失败",
+    "scope": "青萍 App / 米家 App",
+    "event": "仅在该添加流程确有设备连接服务步骤且明确连接失败时启用；不是服务宕机判断。服务架构与事件由接入确认。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "青萍 App / 米家 App"
+  },
+  {
+    "id": "M01",
+    "phase": "Matter 特有",
+    "en": "Pairing timed out",
+    "zh": "配对超时",
+    "scope": "Matter",
+    "event": "PASE 配对阶段的实际会话超时；空闲配对窗口到期不显示。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "Matter"
+  },
+  {
+    "id": "M02",
+    "phase": "Matter 特有",
+    "en": "Pairing failed",
+    "zh": "安全配对失败",
+    "scope": "Matter",
+    "event": "PASE 安全会话明确失败；不是泛指蓝牙连接失败。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "Matter"
+  },
+  {
+    "id": "M03",
+    "phase": "Matter 特有",
+    "en": "Verification failed",
+    "zh": "设备验证失败",
+    "scope": "Matter",
+    "event": "仅在 App 或平台明确回传设备验证失败时启用；设备无结果则使用G01，不能自行推断。",
+    "returnRule": "恢复完成后返回当前配置方式的等待添加页；已有有效配置时返回相应已添加页。",
+    "visibility": "Matter"
+  },
+  {
+    "id": "M04",
+    "phase": "Matter 特有",
+    "en": "Matter connection limit",
+    "zh": "Matter 连接数量已满",
+    "scope": "Matter",
+    "event": "明确收到 Fabric 表容量不足事件；不能用已绑定其他账号替代容量判断。",
+    "returnRule": "保留原 Matter 连接，15秒后返回已添加页；不得自动清除。",
+    "visibility": "Matter"
+  }
+]

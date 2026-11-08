@@ -20,11 +20,8 @@
     "x": 463,
     "y": 140,
     "width": 8,
-    "height": 98
-  },
-  "active_glass": {
-    "x": 461.4,
-    "width": 11.2
+    "height": 98,
+    "opacity": 0.78
   },
   "order": "top to bottom",
   "states": [
@@ -34,7 +31,8 @@
       "file": "state-01-extremely-poor.png",
       "highlight_file": "highlight-state-01-extremely-poor.png",
       "segmentTopY": 140.0,
-      "segmentHeight": 16.333333333333332
+      "segmentHeight": 16.333333333333332,
+      "highlightColor": "#B96DF0"
     },
     {
       "id": 2,
@@ -42,7 +40,8 @@
       "file": "state-02-very-poor.png",
       "highlight_file": "highlight-state-02-very-poor.png",
       "segmentTopY": 156.33333333333334,
-      "segmentHeight": 16.333333333333332
+      "segmentHeight": 16.333333333333332,
+      "highlightColor": "#F45C5C"
     },
     {
       "id": 3,
@@ -50,7 +49,8 @@
       "file": "state-03-poor.png",
       "highlight_file": "highlight-state-03-poor.png",
       "segmentTopY": 172.66666666666666,
-      "segmentHeight": 16.333333333333332
+      "segmentHeight": 16.333333333333332,
+      "highlightColor": "#FF944D"
     },
     {
       "id": 4,
@@ -58,7 +58,8 @@
       "file": "state-04-moderate.png",
       "highlight_file": "highlight-state-04-moderate.png",
       "segmentTopY": 189.0,
-      "segmentHeight": 16.333333333333332
+      "segmentHeight": 16.333333333333332,
+      "highlightColor": "#E8BE43"
     },
     {
       "id": 5,
@@ -66,7 +67,8 @@
       "file": "state-05-fair.png",
       "highlight_file": "highlight-state-05-fair.png",
       "segmentTopY": 205.33333333333331,
-      "segmentHeight": 16.333333333333332
+      "segmentHeight": 16.333333333333332,
+      "highlightColor": "#A5D83C"
     },
     {
       "id": 6,
@@ -74,7 +76,16 @@
       "file": "state-06-good.png",
       "highlight_file": "highlight-state-06-good.png",
       "segmentTopY": 221.66666666666666,
-      "segmentHeight": 16.333333333333332
+      "segmentHeight": 16.333333333333332,
+      "highlightColor": "#68D991"
     }
-  ]
+  ],
+  "active_highlight": {
+    "x": 461.5,
+    "width": 11,
+    "colorRule": "solid bright tint",
+    "outerCornerRadius": 5.5,
+    "shoulderHeight": 3
+  },
+  "style": "flat / solid highlight / inactive alpha .78"
 }
