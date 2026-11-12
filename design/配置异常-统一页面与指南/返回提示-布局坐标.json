@@ -12,290 +12,388 @@
     "G01": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
-      "english": {
-        "size": 30,
-        "baseline": 239
-      },
-      "chinese": {
-        "size": 30,
-        "baseline": 279
+      "symbolCenterY": 158,
+      "bilingual": {
+        "text": "Setup failed · 添加失败",
+        "englishSize": 30,
+        "chineseSize": 30,
+        "baseline": 256,
+        "separator": " · ",
+        "englishWeight": 600,
+        "chineseWeight": 400
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 330,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        122.75,
+        332.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 120,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "G02": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
-      "english": {
-        "size": 30,
-        "baseline": 239
-      },
-      "chinese": {
-        "size": 30,
-        "baseline": 279
+      "symbolCenterY": 158,
+      "bilingual": {
+        "text": "Setup timed out · 添加超时",
+        "englishSize": 30,
+        "chineseSize": 30,
+        "baseline": 256,
+        "separator": " · ",
+        "englishWeight": 600,
+        "chineseWeight": 400
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 330,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        122.75,
+        332.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 120,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "G03": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "G04": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "G05": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "A01": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "A02": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "A03": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "M01": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "M02": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "M03": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     },
     "M04": {
       "centerX": 251,
       "visualCenterY": 228,
-      "symbolCenterY": 143,
+      "symbolCenterY": 145,
       "english": {
         "size": 30,
-        "baseline": 239
+        "baseline": 241
       },
       "chinese": {
         "size": 30,
-        "baseline": 279
+        "baseline": 281
       },
       "returnHint": {
         "size": 30,
-        "baseline": 341,
+        "baseline": 343,
         "font": "Noto Sans CJK SC Regular",
         "color": "#A0ACA0",
         "text": "Returns in {seconds}s · {seconds} 秒后返回"
       },
       "contentBoundsY": [
-        111.75,
-        343.5
-      ]
+        109.75,
+        345.5
+      ],
+      "symbol": {
+        "type": "warning",
+        "x": 213,
+        "y": 107,
+        "width": 76,
+        "height": 76,
+        "color": "#F5B93D"
+      }
     }
   }
 }

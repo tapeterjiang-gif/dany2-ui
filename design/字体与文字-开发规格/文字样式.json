@@ -214,10 +214,10 @@
       "id": "matter_title",
       "label": "Matter 页面标题",
       "font": "Roboto",
-      "size": 20,
+      "size": 22,
       "weight": 600,
-      "x": 124.5,
-      "baseline": 115,
+      "x": 108,
+      "baseline": 131,
       "example": "Add Matter Device",
       "color": "#FFFFFF",
       "anchor": "center",
@@ -227,10 +227,10 @@
       "id": "matter_pairing_code",
       "label": "Matter 配对码",
       "font": "Roboto",
-      "size": 19,
+      "size": 22,
       "weight": 600,
-      "x": 124.5,
-      "baseline": 348,
+      "x": 108,
+      "baseline": 341,
       "example": "1234-567-8901",
       "color": "#FFFFFF",
       "anchor": "center",
@@ -240,51 +240,51 @@
       "id": "matter_body_en",
       "label": "Matter 英文说明",
       "font": "Roboto",
-      "size": 18,
+      "size": 24,
       "weight": 400,
-      "x": 249,
+      "x": 216,
       "baseline": [
-        118,
-        143,
-        168,
-        193,
-        218
+        105,
+        135,
+        165,
+        195,
+        225
       ],
       "example": [
         "Scan with the Qingping",
-        "app or a Matter-compatible",
-        "app, such as Apple Home",
-        "or Google Home, to add",
-        "this device."
+        "app or a Matter-",
+        "compatible app, such as",
+        "Apple Home or Google",
+        "Home, to add this device."
       ],
       "color": "#FFFFFF",
       "anchor": "left",
       "tracking": 0,
-      "line_step": 25
+      "line_step": 30
     },
     {
       "id": "matter_body_zh",
       "label": "Matter 中文说明",
       "font": "Noto Sans CJK SC",
-      "size": 17,
+      "size": 24,
       "weight": 400,
-      "x": 249,
+      "x": 216,
       "baseline": [
-        271,
-        295,
-        319,
-        343
+        273,
+        304,
+        335,
+        366
       ],
       "example": [
         "使用青萍 App 或支持",
-        "Matter 的 App（如 Apple",
-        "Home、Google Home）",
-        "扫码添加设备。"
+        "Matter 的 App（如",
+        "Apple Home、Google",
+        "Home）扫码添加设备。"
       ],
       "color": "#FFFFFF",
       "anchor": "left",
       "tracking": 0,
-      "line_step": 24
+      "line_step": 31
     },
     {
       "id": "qingping_body_en",
