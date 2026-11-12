@@ -1,0 +1,236 @@
+[
+  {
+    "key": "qingping",
+    "name": "Qingping",
+    "zh": "无法连接至青萍",
+    "canvas": [
+      502,
+      410
+    ],
+    "appIcon": [
+      58,
+      110,
+      76,
+      76
+    ],
+    "warning": [
+      166,
+      110,
+      76,
+      76
+    ],
+    "english": {
+      "size": 24,
+      "weight": 600,
+      "x": 260,
+      "baselines": [
+        126,
+        156
+      ],
+      "lines": [
+        "Unable to connect",
+        "to Qingping"
+      ]
+    },
+    "chinese": {
+      "size": 26,
+      "x": 260,
+      "baseline": 190,
+      "text": "无法连接至青萍"
+    },
+    "hint": {
+      "englishSize": 24,
+      "chineseSize": 26,
+      "centerX": 251,
+      "lines": [
+        {
+          "text": "If you need to add again,",
+          "baseline": 246,
+          "size": 24,
+          "font": "Roboto Regular"
+        },
+        {
+          "text": "hold the top bar 6s to reset.",
+          "baseline": 276,
+          "size": 24,
+          "font": "Roboto Regular"
+        },
+        {
+          "text": "如需重新添加至青萍 App，",
+          "baseline": 316,
+          "size": 26,
+          "font": "Noto Sans CJK SC Regular"
+        },
+        {
+          "text": "长按触摸条 6 秒清除设置。",
+          "baseline": 346,
+          "size": 26,
+          "font": "Noto Sans CJK SC Regular"
+        }
+      ]
+    },
+    "color": "#F5B93D",
+    "trigger": "配置仍有效，当前配置方式明确报告连接不可用时进入；不能仅从手机App未打开推断。",
+    "recovery": "连接恢复后回到该方式已添加页面。保留已有配置，不自动清除，不使用15秒返回。",
+    "visualCenter": [
+      251,
+      228
+    ]
+  },
+  {
+    "key": "mijia",
+    "name": "Xiaomi Home",
+    "zh": "无法连接至米家",
+    "canvas": [
+      502,
+      410
+    ],
+    "appIcon": [
+      58,
+      110,
+      76,
+      76
+    ],
+    "warning": [
+      166,
+      110,
+      76,
+      76
+    ],
+    "english": {
+      "size": 24,
+      "weight": 600,
+      "x": 260,
+      "baselines": [
+        126,
+        156
+      ],
+      "lines": [
+        "Unable to connect",
+        "to Xiaomi Home"
+      ]
+    },
+    "chinese": {
+      "size": 26,
+      "x": 260,
+      "baseline": 190,
+      "text": "无法连接至米家"
+    },
+    "hint": {
+      "englishSize": 24,
+      "chineseSize": 26,
+      "centerX": 251,
+      "lines": [
+        {
+          "text": "If you need to add again,",
+          "baseline": 246,
+          "size": 24,
+          "font": "Roboto Regular"
+        },
+        {
+          "text": "hold the top bar 6s to reset.",
+          "baseline": 276,
+          "size": 24,
+          "font": "Roboto Regular"
+        },
+        {
+          "text": "如需重新添加至米家 App，",
+          "baseline": 316,
+          "size": 26,
+          "font": "Noto Sans CJK SC Regular"
+        },
+        {
+          "text": "长按触摸条 6 秒清除设置。",
+          "baseline": 346,
+          "size": 26,
+          "font": "Noto Sans CJK SC Regular"
+        }
+      ]
+    },
+    "color": "#F5B93D",
+    "trigger": "配置仍有效，当前配置方式明确报告连接不可用时进入；不能仅从手机App未打开推断。",
+    "recovery": "连接恢复后回到该方式已添加页面。保留已有配置，不自动清除，不使用15秒返回。",
+    "visualCenter": [
+      251,
+      228
+    ]
+  },
+  {
+    "key": "matter",
+    "name": "Matter",
+    "zh": "无法连接至Matter",
+    "canvas": [
+      502,
+      410
+    ],
+    "appIcon": [
+      58,
+      110,
+      76,
+      76
+    ],
+    "warning": [
+      166,
+      110,
+      76,
+      76
+    ],
+    "english": {
+      "size": 24,
+      "weight": 600,
+      "x": 260,
+      "baselines": [
+        126,
+        156
+      ],
+      "lines": [
+        "Unable to connect",
+        "to Matter"
+      ]
+    },
+    "chinese": {
+      "size": 26,
+      "x": 260,
+      "baseline": 190,
+      "text": "无法连接至Matter"
+    },
+    "hint": {
+      "englishSize": 24,
+      "chineseSize": 26,
+      "centerX": 251,
+      "lines": [
+        {
+          "text": "If you need to add again,",
+          "baseline": 246,
+          "size": 24,
+          "font": "Roboto Regular"
+        },
+        {
+          "text": "hold the top bar 6s to reset.",
+          "baseline": 276,
+          "size": 24,
+          "font": "Roboto Regular"
+        },
+        {
+          "text": "如需重新添加至 Matter 网络，",
+          "baseline": 316,
+          "size": 26,
+          "font": "Noto Sans CJK SC Regular"
+        },
+        {
+          "text": "长按触摸条 6 秒清除设置。",
+          "baseline": 346,
+          "size": 26,
+          "font": "Noto Sans CJK SC Regular"
+        }
+      ]
+    },
+    "color": "#F5B93D",
+    "trigger": "配置仍有效，当前配置方式明确报告连接不可用时进入；不能仅从手机App未打开推断。",
+    "recovery": "连接恢复后回到该方式已添加页面。保留已有配置，不自动清除，不使用15秒返回。",
+    "visualCenter": [
+      251,
+      228
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "canvas": [
+    502,
+    410
+  ],
+  "contentArea": [
+    0,
+    46,
+    502,
+    364
+  ],
+  "visualCenter": [
+    251,
+    228
+  ],
+  "icon": {
+    "x": 207,
+    "y": 112,
+    "width": 88,
+    "height": 88
+  },
+  "english": {
+    "font": "Roboto Regular",
+    "size": 30,
+    "centerX": 251,
+    "baselines": [
+      256,
+      292
+    ],
+    "lines": [
+      "Open the Xiaomi Home app",
+      "to add this device."
+    ]
+  },
+  "chinese": {
+    "font": "Noto Sans CJK SC Regular",
+    "size": 26,
+    "centerX": 251,
+    "baseline": 340,
+    "text": "打开米家 App，添加此设备。"
+  },
+  "note": "等待添加页图标与文案可见范围约y112–344，整体居中于状态栏以下内容区。添加中布局见添加中-布局坐标.json。"
+}

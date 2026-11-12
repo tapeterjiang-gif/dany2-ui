@@ -1,0 +1,157 @@
+[
+  {
+    "protocol": "mijia",
+    "state": "3",
+    "englishSize": 24,
+    "chineseSize": 26,
+    "visualCenter": [
+      251,
+      228
+    ],
+    "boundsY": [
+      108.0,
+      348.25
+    ],
+    "appIcon": [
+      58,
+      110,
+      76,
+      76
+    ],
+    "stateIcon": [
+      166,
+      110,
+      76,
+      76
+    ],
+    "statusEnglish": {
+      "size": 24,
+      "weight": 600,
+      "x": 260,
+      "baselines": [
+        126,
+        156
+      ]
+    },
+    "statusChinese": {
+      "size": 26,
+      "x": 260,
+      "baseline": 190
+    },
+    "centerX": 251,
+    "color": "#BCC8C0",
+    "lines": [
+      {
+        "text": "If you need to add again,",
+        "baseline": 246,
+        "size": 24,
+        "font": "Roboto Regular"
+      },
+      {
+        "text": "hold the top bar 6s to reset.",
+        "baseline": 276,
+        "size": 24,
+        "font": "Roboto Regular"
+      },
+      {
+        "text": "如需重新添加至米家 App，",
+        "baseline": 316,
+        "size": 26,
+        "font": "Noto Sans CJK SC Regular"
+      },
+      {
+        "text": "长按触摸条 6 秒清除设置。",
+        "baseline": 346,
+        "size": 26,
+        "font": "Noto Sans CJK SC Regular"
+      }
+    ]
+  },
+  {
+    "protocol": "mijia",
+    "state": "unavailable",
+    "englishSize": 24,
+    "chineseSize": 26,
+    "visualCenter": [
+      251,
+      228
+    ],
+    "boundsY": [
+      108.0,
+      348.25
+    ],
+    "appIcon": [
+      58,
+      110,
+      76,
+      76
+    ],
+    "stateIcon": [
+      166,
+      110,
+      76,
+      76
+    ],
+    "statusEnglish": {
+      "size": 24,
+      "weight": 600,
+      "x": 260,
+      "baselines": [
+        126,
+        156
+      ]
+    },
+    "statusChinese": {
+      "size": 26,
+      "x": 260,
+      "baseline": 190
+    },
+    "centerX": 251,
+    "color": "#BCC8C0",
+    "lines": [
+      {
+        "text": "If you need to add again,",
+        "baseline": 246,
+        "size": 24,
+        "font": "Roboto Regular"
+      },
+      {
+        "text": "hold the top bar 6s to reset.",
+        "baseline": 276,
+        "size": 24,
+        "font": "Roboto Regular"
+      },
+      {
+        "text": "如需重新添加至米家 App，",
+        "baseline": 316,
+        "size": 26,
+        "font": "Noto Sans CJK SC Regular"
+      },
+      {
+        "text": "长按触摸条 6 秒清除设置。",
+        "baseline": 346,
+        "size": 26,
+        "font": "Noto Sans CJK SC Regular"
+      }
+    ]
+  },
+  {
+    "protocol": "mijia",
+    "state": "5",
+    "fontSize": 30,
+    "centerX": 251,
+    "color": "#BCC8C0",
+    "lines": [
+      {
+        "text": "Keep holding · Release to cancel",
+        "baseline": 330,
+        "font": "Roboto Regular"
+      },
+      {
+        "text": "继续按住 · 松开取消",
+        "baseline": 370,
+        "font": "Noto Sans CJK SC Regular"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "canvas": [
+    502,
+    410
+  ],
+  "contentArea": [
+    0,
+    46,
+    502,
+    364
+  ],
+  "visualCenter": [
+    251,
+    228
+  ],
+  "icon": {
+    "x": 207,
+    "y": 132,
+    "width": 88,
+    "height": 88
+  },
+  "english": {
+    "font": "Roboto SemiBold",
+    "size": 30,
+    "centerX": 251,
+    "baselines": [
+      276
+    ],
+    "lines": [
+      "Adding to Xiaomi Home app…"
+    ]
+  },
+  "chinese": {
+    "font": "Noto Sans CJK SC Regular",
+    "size": 26,
+    "centerX": 251,
+    "baseline": 322,
+    "text": "正在添加至米家 App…"
+  },
+  "note": "添加中页图标和文案可见范围约y132–325，整体居中于状态栏以下内容区。"
+}

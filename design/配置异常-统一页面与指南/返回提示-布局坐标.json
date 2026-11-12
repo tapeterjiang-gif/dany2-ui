@@ -1,0 +1,301 @@
+{
+  "canvas": [
+    502,
+    410
+  ],
+  "contentCenter": [
+    251,
+    228
+  ],
+  "returnFontSize": 30,
+  "layouts": {
+    "G01": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "G02": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "G03": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "G04": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "G05": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "A01": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "A02": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "A03": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "M01": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "M02": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "M03": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    },
+    "M04": {
+      "centerX": 251,
+      "visualCenterY": 228,
+      "symbolCenterY": 143,
+      "english": {
+        "size": 30,
+        "baseline": 239
+      },
+      "chinese": {
+        "size": 30,
+        "baseline": 279
+      },
+      "returnHint": {
+        "size": 30,
+        "baseline": 341,
+        "font": "Noto Sans CJK SC Regular",
+        "color": "#A0ACA0",
+        "text": "Returns in {seconds}s · {seconds} 秒后返回"
+      },
+      "contentBoundsY": [
+        111.75,
+        343.5
+      ]
+    }
+  }
+}
