@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-08-screensaver-semibold",
+  "version": "2026-11-12-co2-left-shift-equal-plots",
   "canvas": {
     "width": 502,
     "height": 410,
@@ -14,54 +14,40 @@
   },
   "header": {
     "time": {
-      "x": 44,
-      "baseline": 33,
-      "size": 16,
+      "x": 64,
+      "baseline": 39,
+      "size": 26,
       "weight": 400
     },
     "duration": {
-      "rightX": 458,
-      "baseline": 33,
-      "size": 16,
+      "rightX": 438,
+      "baseline": 39,
+      "size": 26,
       "weight": 400
     },
-    "color": "#C7CFD5",
-    "separatorY": 51
+    "color": "#F5F7F8",
+    "separatorY": 58
   },
   "rows": [
     {
       "id": "temperature",
       "name": "TEMP",
-      "centerY": 86,
+      "centerY": 92,
       "title": {
-        "x": 62,
-        "baseline": 68,
-        "size": 10,
-        "weight": 600,
-        "anchor": "middle",
-        "color": "#F97316",
-        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
-      },
-      "capsule": {
-        "x": 16,
-        "y": 78,
-        "width": 92,
-        "height": 30,
-        "radius": 15,
-        "fill": "#16A34A",
-        "fillOpacity": 0.16,
-        "strokeOpacity": 0.38,
-        "strokeWidth": 0.8,
-        "text": "Neutral",
-        "textX": 62,
-        "textBaseline": 98,
-        "textSize": 16,
-        "textWeight": 600,
-        "textWhiteMix": 0.2
+        "type": "icon",
+        "asset": "切图/1x/temperature-icon.png",
+        "x": 56,
+        "y": 74,
+        "width": 36,
+        "height": 36,
+        "color": "#16A34A",
+        "colorRule": "grade color of current reading; temperature uses current PMV",
+        "render": "tint white alpha PNG with current grade color",
+        "appearance": "thermometer with three extended wavy marks"
       },
       "reading": {
-        "x": 112,
-        "baseline": 108,
+        "x": 146,
+        "baseline": 114,
         "size": 50,
         "weight": 600,
         "color": "#F5F7F8",
@@ -69,55 +55,41 @@
       },
       "unit": {
         "text": "°C",
-        "exampleX": 216,
-        "baseline": 108,
+        "exampleX": 250,
+        "baseline": 114,
         "size": 18,
         "weight": 400,
         "color": "#F5F7F8"
       },
       "chart": {
-        "baseline": 108,
+        "baseline": 114,
         "height": 49,
         "exampleDomain": [
           20,
           28
         ]
       },
-      "separatorY": 118
+      "separatorY": 126
     },
     {
       "id": "humidity",
       "name": "RH",
-      "centerY": 151,
+      "centerY": 160,
       "title": {
-        "x": 62,
-        "baseline": 134,
-        "size": 10,
-        "weight": 600,
-        "anchor": "middle",
-        "color": "#0891B2",
-        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
-      },
-      "capsule": {
-        "x": 16,
-        "y": 143,
-        "width": 92,
-        "height": 30,
-        "radius": 15,
-        "fill": "#16A34A",
-        "fillOpacity": 0.16,
-        "strokeOpacity": 0.38,
-        "strokeWidth": 0.8,
-        "text": "Comfort",
-        "textX": 62,
-        "textBaseline": 163,
-        "textSize": 16,
-        "textWeight": 600,
-        "textWhiteMix": 0.2
+        "type": "icon",
+        "asset": "切图/1x/humidity-icon.png",
+        "x": 56,
+        "y": 142,
+        "width": 36,
+        "height": 36,
+        "color": "#16A34A",
+        "colorRule": "grade color of current reading; temperature uses current PMV",
+        "render": "tint white alpha PNG with current grade color",
+        "appearance": "water droplet with percent symbol inside"
       },
       "reading": {
-        "x": 112,
-        "baseline": 173,
+        "x": 146,
+        "baseline": 182,
         "size": 50,
         "weight": 600,
         "color": "#F5F7F8",
@@ -125,55 +97,39 @@
       },
       "unit": {
         "text": "%RH",
-        "exampleX": 174,
-        "baseline": 173,
+        "exampleX": 208,
+        "baseline": 182,
         "size": 18,
         "weight": 400,
         "color": "#F5F7F8"
       },
       "chart": {
-        "baseline": 173,
+        "baseline": 182,
         "height": 49,
         "exampleDomain": [
           40,
           70
         ]
       },
-      "separatorY": 183
+      "separatorY": 194
     },
     {
       "id": "co2",
       "name": "CO₂",
-      "centerY": 216,
+      "centerY": 228,
       "title": {
-        "x": 62,
-        "baseline": 199,
-        "size": 10,
+        "x": 74,
+        "baseline": 239,
+        "size": 30,
         "weight": 600,
         "anchor": "middle",
-        "color": "#15803D",
-        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
-      },
-      "capsule": {
-        "x": 16,
-        "y": 208,
-        "width": 92,
-        "height": 30,
-        "radius": 15,
-        "fill": "#16A34A",
-        "fillOpacity": 0.16,
-        "strokeOpacity": 0.38,
-        "strokeWidth": 0.8,
-        "text": "Good",
-        "textX": 62,
-        "textBaseline": 228,
-        "textSize": 16,
-        "textWeight": 600,
-        "textWhiteMix": 0.2
+        "color": "#EA580C",
+        "verticalAlignment": "center between row separators",
+        "colorRule": "grade color of current reading; temperature uses current PMV"
       },
       "reading": {
-        "x": 112,
-        "baseline": 238,
+        "x": 118,
+        "baseline": 250,
         "size": 50,
         "weight": 600,
         "color": "#F5F7F8",
@@ -181,55 +137,49 @@
       },
       "unit": {
         "text": "ppm",
-        "exampleX": 202,
-        "baseline": 238,
+        "exampleX": 235.86,
+        "baseline": 250,
         "size": 18,
         "weight": 400,
         "color": "#F5F7F8"
       },
       "chart": {
-        "baseline": 238,
+        "baseline": 250,
         "height": 49,
         "exampleDomain": [
           0,
-          1500
+          2500
         ]
       },
-      "separatorY": 248
+      "separatorY": 262,
+      "exampleValue": 2168,
+      "dynamicReading": {
+        "left": 146,
+        "right": 272,
+        "defaultSize": 50,
+        "unitSize": 18,
+        "gap": 6,
+        "fourDigitLeft": 118,
+        "fourDigitShift": 28
+      }
     },
     {
       "id": "pm25",
       "name": "PM2.5",
-      "centerY": 281,
+      "centerY": 296,
       "title": {
-        "x": 62,
-        "baseline": 264,
-        "size": 10,
+        "x": 74,
+        "baseline": 307,
+        "size": 30,
         "weight": 600,
         "anchor": "middle",
-        "color": "#667A83",
-        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
-      },
-      "capsule": {
-        "x": 16,
-        "y": 273,
-        "width": 92,
-        "height": 30,
-        "radius": 15,
-        "fill": "#CA8A04",
-        "fillOpacity": 0.16,
-        "strokeOpacity": 0.38,
-        "strokeWidth": 0.8,
-        "text": "Moderate",
-        "textX": 62,
-        "textBaseline": 293,
-        "textSize": 16,
-        "textWeight": 600,
-        "textWhiteMix": 0.2
+        "color": "#CA8A04",
+        "verticalAlignment": "center between row separators",
+        "colorRule": "grade color of current reading; temperature uses current PMV"
       },
       "reading": {
-        "x": 112,
-        "baseline": 303,
+        "x": 146,
+        "baseline": 318,
         "size": 50,
         "weight": 600,
         "color": "#F5F7F8",
@@ -237,55 +187,55 @@
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 174,
-        "baseline": 303,
+        "exampleX": 208,
+        "baseline": 318,
         "size": 18,
         "weight": 400,
         "color": "#F5F7F8"
       },
       "chart": {
-        "baseline": 303,
+        "baseline": 318,
         "height": 49,
         "exampleDomain": [
           0,
           60
+        ],
+        "exampleHistoryAnchors": [
+          4,
+          5,
+          8,
+          13,
+          19,
+          26,
+          35,
+          31,
+          24,
+          14,
+          5,
+          4,
+          12,
+          26
         ]
       },
-      "separatorY": 313
+      "separatorY": 330
     },
     {
       "id": "pm10",
       "name": "PM10",
-      "centerY": 346,
+      "centerY": 364,
       "title": {
-        "x": 62,
-        "baseline": 329,
-        "size": 10,
+        "x": 74,
+        "baseline": 375,
+        "size": 30,
         "weight": 600,
         "anchor": "middle",
-        "color": "#9A7958",
-        "verticalAlignment": "center between row top separator and capsule top, using font cap height"
-      },
-      "capsule": {
-        "x": 16,
-        "y": 338,
-        "width": 92,
-        "height": 30,
-        "radius": 15,
-        "fill": "#65A30D",
-        "fillOpacity": 0.16,
-        "strokeOpacity": 0.38,
-        "strokeWidth": 0.8,
-        "text": "Fair",
-        "textX": 62,
-        "textBaseline": 358,
-        "textSize": 16,
-        "textWeight": 600,
-        "textWhiteMix": 0.2
+        "color": "#65A30D",
+        "verticalAlignment": "center between row separators",
+        "colorRule": "grade color of current reading; temperature uses current PMV"
       },
       "reading": {
-        "x": 112,
-        "baseline": 368,
+        "x": 146,
+        "baseline": 386,
         "size": 50,
         "weight": 600,
         "color": "#F5F7F8",
@@ -293,36 +243,36 @@
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 174,
-        "baseline": 368,
+        "exampleX": 208,
+        "baseline": 386,
         "size": 18,
         "weight": 400,
         "color": "#F5F7F8"
       },
       "chart": {
-        "baseline": 368,
+        "baseline": 386,
         "height": 49,
         "exampleDomain": [
           0,
           60
         ]
       },
-      "separatorY": 378
+      "separatorY": 398
     }
   ],
   "plots": {
-    "x": 252,
-    "right": 461.98,
-    "width": 209.98,
+    "x": 276,
+    "right": 462.06,
+    "width": 186.06,
     "samples": 24,
-    "step": 8.86,
+    "step": 7.82,
     "barWidth": 6.2,
     "topRadius": 1.5,
     "bottomCorners": "square",
     "fill": "grade color; top opacity 1, bottom opacity 0.84"
   },
   "meanLines": {
-    "x": 252,
+    "x": 276,
     "right": 462,
     "width": 0.7,
     "dash": [
@@ -336,28 +286,11 @@
     "numericLabels": false
   },
   "rulers": {
-    "ticksX": [
-      252,
-      353,
-      454
-    ],
-    "tickY": [
-      378,
-      382
-    ],
-    "labelBaseline": 396,
-    "fontSize": 10,
-    "color": "#929A9F",
-    "anchor": "middle",
-    "exampleLabels": [
-      "10:00",
-      "22:00",
-      "10:00"
-    ]
+    "visible": false
   },
   "dynamicReading": {
-    "left": 112,
-    "right": 242,
+    "left": 146,
+    "right": 272,
     "defaultSize": 50,
     "minSize": 20,
     "unitSize": 18,
