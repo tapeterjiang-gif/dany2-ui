@@ -1,6 +1,12 @@
 const fs = require('fs');
 const { Resvg } = require('@resvg/resvg-js');
 const root = __dirname;
+const fontkit = require('fontkit');
+const {layoutReading} = require('./读数布局.js');
+const faceRegular = fontkit.openSync(root + '/字体/Roboto-Regular.ttf');
+const faceSemiBold = fontkit.openSync(root + '/字体/Roboto-SemiBold.ttf');
+function measure(value,size,weight,tracking){const face=weight===600?faceSemiBold:faceRegular;const run=face.layout(value);return run.positions.reduce((sum,p)=>sum+p.xAdvance,0)/face.unitsPerEm*size+Math.max(0,Array.from(value).length-1)*tracking;}
+
 const out = root + '/预览';
 fs.mkdirSync(out, {recursive: true});
 const fontFiles = ['Roboto-Regular.ttf', 'Roboto-SemiBold.ttf'].map(name => root + '/字体/' + name);
@@ -8,12 +14,15 @@ function text(value, x, y, size, color = '#FFFFFF', weight = 400, anchor = 'star
   return `<text x="${x}" y="${y}" font-family="Roboto" font-size="${size}" font-weight="${weight}" fill="${color}" text-anchor="${anchor}" ${extra}>${value}</text>`;
 }
 // 36×36 transparent icon tile; tint with the current reading grade color.
-function metricIcon(kind, x, y, color) {
-  const shape = kind === 'temperature'
-    ? '<path d="M14 22.5V6a4 4 0 0 1 8 0v16.5a7 7 0 1 1-8 0Z"/><path d="M18 10v16"/><circle cx="18" cy="28" r="2" fill="currentColor" stroke="none"/><path d="M26 9C28 6.8 30 11.2 32 9Q33.2 7.8 34.5 9M26 14C28 11.8 30 16.2 32 14Q33.2 12.8 34.5 14M26 19C28 16.8 30 21.2 32 19Q33.2 17.8 34.5 19"/>'
-    : '<path d="M18 3C15 8 7 16 7 23a11 11 0 0 0 22 0C29 16 21 8 18 3Z"/><g stroke-width="1.6"><circle cx="14.5" cy="19" r="1.8"/><circle cx="21.5" cy="27" r="1.8"/><path d="M14 28L22 18"/></g>';
+function metricIcon(kind,x,y,color) {
+  if(kind==='humidity'){
+    const drop='M16 9C14 12.6 10 17.7 10 22a6 6 0 0 0 12 0C22 17.7 18 12.6 16 9Z';
+    return `<g transform="translate(${x} ${y})" color="${color}" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><defs><mask id="humidity-steam-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" fill="white"/><path d="${drop}" fill="black" stroke="black" stroke-width="2.2"/></mask></defs><g mask="url(#humidity-steam-mask)"><path d="M21 10C18 15 24 21 21 27M27 10C24 15 30 21 27 27M33 10C30 15 36 21 33 27"/></g><path d="${drop}"/></g>`;
+  }
+  const shape="<path d=\"M14 22.5V6a4 4 0 0 1 8 0v16.5a7 7 0 1 1-8 0Z\"/><path d=\"M18 10v16\"/><circle cx=\"18\" cy=\"28\" r=\"2\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M26 9C28 6.8 30 11.2 32 9Q33.2 7.8 34.5 9M26 14C28 11.8 30 16.2 32 14Q33.2 12.8 34.5 14M26 19C28 16.8 30 21.2 32 19Q33.2 17.8 34.5 19\"/>";
   return `<g transform="translate(${x} ${y})" color="${color}" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">${shape}</g>`;
 }
+
 const grade = { good: '#16A34A', fair: '#65A30D', moderate: '#CA8A04', wet: '#1D4ED8' };
 const rows = [
   { name: 'TEMP', value: '24.6', unit: '°C', unitX: 293, identity: '#F97316', state: 'Neutral', mix: [['good', 20], ['moderate', 4]] },
@@ -58,12 +67,13 @@ displayOrder.forEach((sourceIndex, index) => {
   const center = 92 + index * 68;
   const rowTop = center - 34;
   const chart = histories[sourceIndex];
-  const titleBaseline = center + 11;
+  const titleSize = {'CO₂':36,'PM2.5':24,PM10:26}[row.name] || 30;
+  const titleBaseline = center + ({'CO₂':10,'PM2.5':8,PM10:9}[row.name] || 11);
   const currentColor = chart.color(Number(row.value), 23);
   if (sourceIndex === 0 || sourceIndex === 1) {
-    body += metricIcon(sourceIndex === 0 ? 'temperature' : 'humidity', 56, center - 18, currentColor);
+    body += metricIcon(sourceIndex === 0 ? 'temperature' : 'humidity', 54, center - 18, currentColor);
   } else {
-    body += text(row.name, 74, titleBaseline, 30, currentColor, 600, 'middle');
+    body += text(row.name, 72, titleBaseline, titleSize, currentColor, 600, 'middle');
   }
   const baseline = center + 22;
   const plotX = 276;
@@ -83,10 +93,10 @@ displayOrder.forEach((sourceIndex, index) => {
   const averagePMV = Array.from({ length: 24 }, (_, hour) => interpolate(pmv, hour)).reduce((sum, value) => sum + value, 0) / 24;
   const averageColor = sourceIndex === 0 ? (averagePMV > 0.5 ? '#CA8A04' : '#16A34A') : chart.color(average);
   body += `<path d="M${plotX} ${averageY} H462" stroke="${tint(averageColor, 0.16)}" stroke-width="0.7" stroke-opacity="0.72" stroke-dasharray="4 4" stroke-linecap="butt"/>`;
-  const readingShift = sourceIndex === 4 && /^\d{4}$/.test(row.value) ? 28 : 0;
-  body += text(row.value, 146 - readingShift, center + 22, 50, '#F5F7F8', 600, 'start', 'letter-spacing="-0.6"');
-  const unitX = { TEMP: 250, RH: 208, 'PM2.5': 208, PM10: 208, 'CO₂': 263.86 - readingShift }[row.name];
-  body += text(row.unit, unitX, center + 22, 18, '#F5F7F8');
+  const metric = ['temperature','humidity','pm25','pm10','co2'][sourceIndex];
+  const reading = layoutReading(row.value,row.unit,center+22,measure,metric);
+  body += text(reading.text, reading.x, reading.baseline, reading.size, '#F5F7F8',600,'start',`letter-spacing="${reading.tracking}"`);
+  body += text(reading.unit, reading.unitX, reading.baseline, reading.unitSize, '#F5F7F8');
 
   body += `<path d="M23 ${center + 34} H479" stroke="url(#separator)" stroke-width="0.7"/>`;
 });

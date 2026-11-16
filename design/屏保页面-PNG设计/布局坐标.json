@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-12-co2-left-shift-equal-plots",
+  "version": "2026-11-16-final-humidity-outline-steam",
   "canvas": {
     "width": 502,
     "height": 410,
@@ -36,7 +36,7 @@
       "title": {
         "type": "icon",
         "asset": "切图/1x/temperature-icon.png",
-        "x": 56,
+        "x": 54,
         "y": 74,
         "width": 36,
         "height": 36,
@@ -55,7 +55,7 @@
       },
       "unit": {
         "text": "°C",
-        "exampleX": 250,
+        "exampleX": 250.10234375,
         "baseline": 114,
         "size": 18,
         "weight": 400,
@@ -69,7 +69,28 @@
           28
         ]
       },
-      "separatorY": 126
+      "separatorY": 126,
+      "dynamicReading": {
+        "baseX": 146,
+        "extendAtDigits": 3,
+        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
+        "example": {
+          "text": "24.6",
+          "x": 146,
+          "baseline": 114,
+          "size": 50,
+          "weight": 600,
+          "tracking": -0.6,
+          "unit": "°C",
+          "unitX": 250.10234375,
+          "unitSize": 18,
+          "baseX": 146,
+          "shift": 0,
+          "digitCount": 2,
+          "extendsLeft": false
+        }
+      },
+      "exampleValue": 24.6
     },
     {
       "id": "humidity",
@@ -78,14 +99,24 @@
       "title": {
         "type": "icon",
         "asset": "切图/1x/humidity-icon.png",
-        "x": 56,
+        "x": 54,
         "y": 142,
         "width": 36,
         "height": 36,
         "color": "#16A34A",
         "colorRule": "grade color of current reading; temperature uses current PMV",
         "render": "tint white alpha PNG with current grade color",
-        "appearance": "water droplet with percent symbol inside"
+        "appearance": "small hollow droplet in front of three vertical steam curves; no percent sign",
+        "strokeWidth": 2.2,
+        "dropCenterX": 16,
+        "steamCentersX": [
+          21,
+          27,
+          33
+        ],
+        "steamTop": 10,
+        "steamBottom": 27,
+        "occlusion": "droplet masks the steam behind its outline and interior"
       },
       "reading": {
         "x": 146,
@@ -97,7 +128,7 @@
       },
       "unit": {
         "text": "%RH",
-        "exampleX": 208,
+        "exampleX": 208.52890625,
         "baseline": 182,
         "size": 18,
         "weight": 400,
@@ -111,16 +142,37 @@
           70
         ]
       },
-      "separatorY": 194
+      "separatorY": 194,
+      "dynamicReading": {
+        "baseX": 146,
+        "extendAtDigits": null,
+        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
+        "example": {
+          "text": "56",
+          "x": 146,
+          "baseline": 182,
+          "size": 50,
+          "weight": 600,
+          "tracking": -0.6,
+          "unit": "%RH",
+          "unitX": 208.52890625,
+          "unitSize": 18,
+          "baseX": 146,
+          "shift": 0,
+          "digitCount": 2,
+          "extendsLeft": false
+        }
+      },
+      "exampleValue": 56
     },
     {
       "id": "co2",
       "name": "CO₂",
       "centerY": 228,
       "title": {
-        "x": 74,
-        "baseline": 239,
-        "size": 30,
+        "x": 72,
+        "baseline": 238,
+        "size": 36,
         "weight": 600,
         "anchor": "middle",
         "color": "#EA580C",
@@ -128,7 +180,7 @@
         "colorRule": "grade color of current reading; temperature uses current PMV"
       },
       "reading": {
-        "x": 118,
+        "x": 118.035546875,
         "baseline": 250,
         "size": 50,
         "weight": 600,
@@ -137,7 +189,7 @@
       },
       "unit": {
         "text": "ppm",
-        "exampleX": 235.86,
+        "exampleX": 236.493359375,
         "baseline": 250,
         "size": 18,
         "weight": 400,
@@ -154,13 +206,24 @@
       "separatorY": 262,
       "exampleValue": 2168,
       "dynamicReading": {
-        "left": 146,
-        "right": 272,
-        "defaultSize": 50,
-        "unitSize": 18,
-        "gap": 6,
-        "fourDigitLeft": 118,
-        "fourDigitShift": 28
+        "baseX": 146,
+        "extendAtDigits": 4,
+        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
+        "example": {
+          "text": "2168",
+          "x": 118.035546875,
+          "baseline": 250,
+          "size": 50,
+          "weight": 600,
+          "tracking": -0.6,
+          "unit": "ppm",
+          "unitX": 236.493359375,
+          "unitSize": 18,
+          "baseX": 146,
+          "shift": 27.964453125,
+          "digitCount": 4,
+          "extendsLeft": true
+        }
       }
     },
     {
@@ -168,9 +231,9 @@
       "name": "PM2.5",
       "centerY": 296,
       "title": {
-        "x": 74,
-        "baseline": 307,
-        "size": 30,
+        "x": 72,
+        "baseline": 304,
+        "size": 24,
         "weight": 600,
         "anchor": "middle",
         "color": "#CA8A04",
@@ -187,7 +250,7 @@
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 208,
+        "exampleX": 208.52890625,
         "baseline": 318,
         "size": 18,
         "weight": 400,
@@ -217,16 +280,37 @@
           26
         ]
       },
-      "separatorY": 330
+      "separatorY": 330,
+      "dynamicReading": {
+        "baseX": 146,
+        "extendAtDigits": 3,
+        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
+        "example": {
+          "text": "26",
+          "x": 146,
+          "baseline": 318,
+          "size": 50,
+          "weight": 600,
+          "tracking": -0.6,
+          "unit": "μg/m³",
+          "unitX": 208.52890625,
+          "unitSize": 18,
+          "baseX": 146,
+          "shift": 0,
+          "digitCount": 2,
+          "extendsLeft": false
+        }
+      },
+      "exampleValue": 26
     },
     {
       "id": "pm10",
       "name": "PM10",
       "centerY": 364,
       "title": {
-        "x": 74,
-        "baseline": 375,
-        "size": 30,
+        "x": 72,
+        "baseline": 373,
+        "size": 26,
         "weight": 600,
         "anchor": "middle",
         "color": "#65A30D",
@@ -243,7 +327,7 @@
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 208,
+        "exampleX": 208.52890625,
         "baseline": 386,
         "size": 18,
         "weight": 400,
@@ -257,7 +341,28 @@
           60
         ]
       },
-      "separatorY": 398
+      "separatorY": 398,
+      "dynamicReading": {
+        "baseX": 146,
+        "extendAtDigits": 3,
+        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
+        "example": {
+          "text": "17",
+          "x": 146,
+          "baseline": 386,
+          "size": 50,
+          "weight": 600,
+          "tracking": -0.6,
+          "unit": "μg/m³",
+          "unitX": 208.52890625,
+          "unitSize": 18,
+          "baseX": 146,
+          "shift": 0,
+          "digitCount": 2,
+          "extendsLeft": false
+        }
+      },
+      "exampleValue": 17
     }
   ],
   "plots": {
@@ -290,12 +395,23 @@
   },
   "dynamicReading": {
     "left": 146,
-    "right": 272,
+    "right": 273,
     "defaultSize": 50,
     "minSize": 20,
     "unitSize": 18,
     "gap": 6,
-    "tracking": -0.6
+    "tracking": -0.6,
+    "baseX": 146,
+    "extendedLeft": "146 - advance(first digit and optional sign, including one tracking interval)",
+    "digitCounting": "Temperature: count integer digits only, excluding sign, decimal point and fractional digits (24.6=2;100.0=3). Other metrics count digits.",
+    "extendConditions": {
+      "temperature": 3,
+      "co2": 4,
+      "pm25": 3,
+      "pm10": 3
+    },
+    "reference": "Humidity reading first-character anchor x146",
+    "metricArgument": "temperature / humidity / co2 / pm25 / pm10"
   },
   "exampleOnly": true
 }

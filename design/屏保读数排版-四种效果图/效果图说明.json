@@ -1,0 +1,74 @@
+[
+  {
+    "file": "01-均不向左扩展",
+    "title": "均不左扩",
+    "values": {
+      "temperature": "24.6",
+      "humidity": "56",
+      "co2": "999",
+      "pm25": "26",
+      "pm10": "17"
+    },
+    "extends": {
+      "temperature": false,
+      "humidity": false,
+      "co2": false,
+      "pm25": false,
+      "pm10": false
+    }
+  },
+  {
+    "file": "02-仅CO2向左扩展",
+    "title": "仅 CO₂ 左扩",
+    "values": {
+      "temperature": "24.6",
+      "humidity": "56",
+      "co2": "2168",
+      "pm25": "26",
+      "pm10": "17"
+    },
+    "extends": {
+      "temperature": false,
+      "humidity": false,
+      "co2": true,
+      "pm25": false,
+      "pm10": false
+    }
+  },
+  {
+    "file": "03-仅PM向左扩展",
+    "title": "仅 PM2.5 / PM10 左扩",
+    "values": {
+      "temperature": "24.6",
+      "humidity": "56",
+      "co2": "999",
+      "pm25": "126",
+      "pm10": "117"
+    },
+    "extends": {
+      "temperature": false,
+      "humidity": false,
+      "co2": false,
+      "pm25": true,
+      "pm10": true
+    }
+  },
+  {
+    "file": "04-CO2和PM均向左扩展",
+    "title": "CO₂ 与 PM 均左扩",
+    "values": {
+      "temperature": "24.6",
+      "humidity": "56",
+      "co2": "2168",
+      "pm25": "126",
+      "pm10": "117"
+    },
+    "extends": {
+      "temperature": false,
+      "humidity": false,
+      "co2": true,
+      "pm25": true,
+      "pm10": true
+    }
+  }
+]
