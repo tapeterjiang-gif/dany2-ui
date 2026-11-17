@@ -34,7 +34,7 @@
     },
     "suggestedColor": "#22C55E",
     "formula": "width = 30.4 * clamp(level, 0, 100) / 100",
-    "drawOrder": "program fill, then empty frame"
+    "drawOrder": "program fill, then empty frame, then optional charging bolt"
   },
   "assets": [
     {
@@ -84,9 +84,17 @@
       "y": 7,
       "width": 50,
       "height": 30
+    },
+    {
+      "name": "battery-charging",
+      "group": "Battery",
+      "x": 400.8,
+      "y": 15,
+      "width": 10,
+      "height": 14
     }
   ],
-  "revision": "2026-11-02 / 28px time and enlarged battery",
+  "revision": "2026-11-17 / compact pagination and charging overlay",
   "iconScale": 1.4,
   "outerAnchors": {
     "left": 59,
@@ -102,23 +110,35 @@
   },
   "pagination": {
     "centers": [
-      161.5,
-      182.5,
-      203.5,
-      224.5,
-      245.5,
-      266.5
+      169,
+      187,
+      205,
+      223,
+      241,
+      259
     ],
     "centerY": 22,
     "dotDiameter": 7,
     "activeWidth": 18.2,
     "activeHeight": 7,
-    "radius": 3.5
+    "radius": 3.5,
+    "pitch": 18
   },
   "alignment": {
     "visibleCenterY": 22,
     "paginationCenterX": 214,
     "note": "Visible contours aligned, not transparent PNG bounds. Pagination balanced between left connectivity and right time/battery."
   },
-  "batteryScale": 1.6
+  "batteryScale": 1.6,
+  "batteryCharging": {
+    "asset": "Battery/1x/battery-charging.png",
+    "x": 400.8,
+    "y": 15,
+    "width": 10,
+    "height": 14,
+    "visibleColor": "#FFFFFF",
+    "showWhen": "charging == true",
+    "drawOrder": "battery fill → empty frame → charging bolt",
+    "note": "flash sits within the battery interior; omit bolt when not charging"
+  }
 }
