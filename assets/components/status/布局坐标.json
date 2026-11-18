@@ -88,13 +88,13 @@
     {
       "name": "battery-charging",
       "group": "Battery",
-      "x": 400.8,
-      "y": 15,
-      "width": 10,
-      "height": 14
+      "x": 399.8,
+      "y": 14,
+      "width": 12,
+      "height": 16
     }
   ],
-  "revision": "2026-11-17 / compact pagination and charging overlay",
+  "revision": "2026-11-18 / enlarged charging bolt",
   "iconScale": 1.4,
   "outerAnchors": {
     "left": 59,
@@ -132,10 +132,10 @@
   "batteryScale": 1.6,
   "batteryCharging": {
     "asset": "Battery/1x/battery-charging.png",
-    "x": 400.8,
-    "y": 15,
-    "width": 10,
-    "height": 14,
+    "x": 399.8,
+    "y": 14,
+    "width": 12,
+    "height": 16,
     "visibleColor": "#FFFFFF",
     "showWhen": "charging == true",
     "drawOrder": "battery fill → empty frame → charging bolt",

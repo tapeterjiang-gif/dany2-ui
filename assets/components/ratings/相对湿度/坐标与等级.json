@@ -5,19 +5,19 @@
     "height": 410
   },
   "slice": {
-    "x": 459,
+    "x": 462,
     "y": 138,
     "width": 16,
     "height": 102
   },
   "scale4x": {
-    "x": 1836,
+    "x": 1848,
     "y": 552,
     "width": 64,
     "height": 408
   },
   "track": {
-    "x": 463,
+    "x": 466,
     "y": 140,
     "width": 8,
     "height": 98,
@@ -54,7 +54,7 @@
     }
   ],
   "active_highlight": {
-    "x": 461.5,
+    "x": 464.5,
     "width": 11,
     "colorRule": "solid bright tint",
     "outerCornerRadius": 5.5,

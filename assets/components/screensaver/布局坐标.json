@@ -413,5 +413,14 @@
     "reference": "Humidity reading first-character anchor x146",
     "metricArgument": "temperature / humidity / co2 / pm25 / pm10"
   },
-  "exampleOnly": true
+  "exampleOnly": true,
+  "interaction": {
+    "idleTimeoutSeconds": 1800,
+    "idleTimeoutMinutes": 30,
+    "trigger": "30 minutes without top touch-bar user interaction",
+    "resetOn": "touch-bar click or swipe",
+    "ignoreForIdleReset": "automatic sensor, chart and clock updates",
+    "pauseDuring": "active configuration, pairing or clear-settings operations",
+    "wake": "top touch-bar interaction returns to previous reading page"
+  }
 }

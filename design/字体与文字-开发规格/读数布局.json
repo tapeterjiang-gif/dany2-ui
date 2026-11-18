@@ -40,22 +40,22 @@
   },
   "rating": {
     "slice": [
-      459,
+      462,
       138,
       16,
       102
     ],
     "track": [
-      463,
+      466,
       140,
       8,
       98
     ],
     "motionOrigin": [
-      467,
+      470,
       189
     ],
-    "activeHighlightX": 461.5,
+    "activeHighlightX": 464.5,
     "activeHighlightWidth": 11,
     "style": "flat",
     "inactiveOpacity": 0.78
@@ -81,7 +81,7 @@
       51
     ]
   },
-  "runtime": "Reference single-value coordinates use baseline238. Measure dynamic single values and place units with at least14px gap. PM uses supplied layout function and endX<=458; never overlap rating at x461.4.",
+  "runtime": "Reference single-value coordinates use baseline238. Measure dynamic single values and place units with at least14px gap. PM uses supplied layout function and endX<=458; never overlap rating at x464.5.",
   "co2Subscript": {
     "x": 69,
     "baseline": 123,
@@ -106,10 +106,10 @@
     "paginationY": 22,
     "paginationPitch": 18,
     "batteryCharging": {
-      "x": 400.8,
-      "y": 15,
-      "width": 10,
-      "height": 14,
+      "x": 399.8,
+      "y": 14,
+      "width": 12,
+      "height": 16,
       "showWhen": "charging"
     }
   }
