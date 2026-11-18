@@ -1,0 +1,144 @@
+{
+  "canvas": [
+    502,
+    410
+  ],
+  "placements": [
+    {
+      "protocol": "qingping",
+      "state": "clearing",
+      "periodMs": 1200,
+      "position": {
+        "x": 219,
+        "y": 111,
+        "width": 64,
+        "height": 64,
+        "centerX": 251,
+        "centerY": 143.0
+      },
+      "track": "1x/spinner-64-track.png",
+      "arc": "1x/spinner-64-arc.png",
+      "direction": "clockwise",
+      "rotationEasing": "linear",
+      "fadeInMs": 160,
+      "arcDegrees": 90,
+      "logoRotates": false
+    },
+    {
+      "protocol": "mijia",
+      "state": "clearing",
+      "periodMs": 1200,
+      "position": {
+        "x": 219,
+        "y": 111,
+        "width": 64,
+        "height": 64,
+        "centerX": 251,
+        "centerY": 143.0
+      },
+      "track": "1x/spinner-64-track.png",
+      "arc": "1x/spinner-64-arc.png",
+      "direction": "clockwise",
+      "rotationEasing": "linear",
+      "fadeInMs": 160,
+      "arcDegrees": 90,
+      "logoRotates": false
+    },
+    {
+      "protocol": "matter",
+      "state": "adding",
+      "periodMs": 1600,
+      "position": {
+        "x": 217,
+        "y": 103,
+        "width": 68,
+        "height": 68,
+        "centerX": 251,
+        "centerY": 137.0
+      },
+      "track": "1x/spinner-68-track.png",
+      "arc": "1x/spinner-68-arc.png",
+      "direction": "clockwise",
+      "rotationEasing": "linear",
+      "fadeInMs": 160,
+      "arcDegrees": 90,
+      "logoRotates": false
+    },
+    {
+      "protocol": "matter",
+      "state": "clearing",
+      "periodMs": 1200,
+      "position": {
+        "x": 219,
+        "y": 111,
+        "width": 64,
+        "height": 64,
+        "centerX": 251,
+        "centerY": 143.0
+      },
+      "track": "1x/spinner-64-track.png",
+      "arc": "1x/spinner-64-arc.png",
+      "direction": "clockwise",
+      "rotationEasing": "linear",
+      "fadeInMs": 160,
+      "arcDegrees": 90,
+      "logoRotates": false
+    }
+  ],
+  "fps": {
+    "target": 60,
+    "minimumSuggested": 30
+  },
+  "timeBased": true,
+  "finishPolicy": "Immediately exit on the actual result; never wait for a complete revolution. No minimum wait is imposed.",
+  "holdCountdown": "The 6-second touch-bar clear countdown is actual progress and does not use this indefinite loop.",
+  "reducedMotion": "static arc; no rotation",
+  "notes": [
+    "Qingping and Mijia adding use the original breathing halo without a spinner.",
+    "Matter adding and all clearing states rotate only the white arc; track remains still."
+  ],
+  "breathingPlacements": [
+    {
+      "protocol": "qingping",
+      "state": "adding",
+      "periodMs": 2400,
+      "center": [
+        251,
+        176
+      ],
+      "baseSize": [
+        88,
+        88
+      ],
+      "scale": [
+        1.04,
+        1.32,
+        1.04
+      ],
+      "easing": "ease-in-out",
+      "logoRotates": false,
+      "logoScales": false
+    },
+    {
+      "protocol": "mijia",
+      "state": "adding",
+      "periodMs": 2400,
+      "center": [
+        251,
+        176
+      ],
+      "baseSize": [
+        88,
+        88
+      ],
+      "scale": [
+        1.04,
+        1.32,
+        1.04
+      ],
+      "easing": "ease-in-out",
+      "logoRotates": false,
+      "logoScales": false
+    }
+  ]
+}

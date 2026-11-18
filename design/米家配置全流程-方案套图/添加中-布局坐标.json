@@ -37,5 +37,25 @@
     "baseline": 322,
     "text": "正在添加至米家 App…"
   },
-  "note": "添加中页图标和文案可见范围约y132–325，整体居中于状态栏以下内容区。"
+  "note": "恢复原App图标呼吸光晕，不叠加旋转等待环。实际结果到达立即收起光晕并切换页面。",
+  "logoMotion": "breathing-halo",
+  "breathing": {
+    "periodMs": 2400,
+    "easing": "ease-in-out",
+    "center": [
+      251,
+      176
+    ],
+    "baseSize": [
+      88,
+      88
+    ],
+    "scale": [
+      1.04,
+      1.32,
+      1.04
+    ],
+    "logoRotates": false,
+    "logoScales": false
+  }
 }

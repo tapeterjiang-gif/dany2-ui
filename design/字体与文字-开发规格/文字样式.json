@@ -216,8 +216,8 @@
       "font": "Roboto",
       "size": 22,
       "weight": 600,
-      "x": 108,
-      "baseline": 131,
+      "x": 111,
+      "baseline": 128,
       "example": "Add Matter Device",
       "color": "#FFFFFF",
       "anchor": "center",
@@ -229,8 +229,8 @@
       "font": "Roboto",
       "size": 22,
       "weight": 600,
-      "x": 108,
-      "baseline": 341,
+      "x": 111,
+      "baseline": 344,
       "example": "1234-567-8901",
       "color": "#FFFFFF",
       "anchor": "center",
@@ -240,15 +240,15 @@
       "id": "matter_body_en",
       "label": "Matter 英文说明",
       "font": "Roboto",
-      "size": 24,
+      "size": 22,
       "weight": 400,
-      "x": 216,
+      "x": 221,
       "baseline": [
-        105,
-        135,
-        165,
-        195,
-        225
+        113,
+        142,
+        171,
+        200,
+        229
       ],
       "example": [
         "Scan with the Qingping",
@@ -260,20 +260,20 @@
       "color": "#FFFFFF",
       "anchor": "left",
       "tracking": 0,
-      "line_step": 30
+      "line_step": 29
     },
     {
       "id": "matter_body_zh",
       "label": "Matter 中文说明",
       "font": "Noto Sans CJK SC",
-      "size": 24,
+      "size": 22,
       "weight": 400,
-      "x": 216,
+      "x": 221,
       "baseline": [
-        273,
-        304,
-        335,
-        366
+        270,
+        299,
+        328,
+        357
       ],
       "example": [
         "使用青萍 App 或支持",
@@ -284,7 +284,7 @@
       "color": "#FFFFFF",
       "anchor": "left",
       "tracking": 0,
-      "line_step": 31
+      "line_step": 29
     },
     {
       "id": "qingping_body_en",

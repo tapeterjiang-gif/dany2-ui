@@ -1,0 +1,125 @@
+{
+  "revision": "2026-11-18",
+  "wifi": {
+    "cycleMs": 1800,
+    "stages": [
+      {
+        "rangeMs": [
+          0,
+          180
+        ],
+        "action": "all arcs dim; base icon visible"
+      },
+      {
+        "rangeMs": [
+          180,
+          360
+        ],
+        "action": "arc1 fades in"
+      },
+      {
+        "rangeMs": [
+          360,
+          540
+        ],
+        "action": "arc2 fades in; arc1 stays on"
+      },
+      {
+        "rangeMs": [
+          540,
+          720
+        ],
+        "action": "arc3 fades in; arcs1/2 stay on"
+      },
+      {
+        "rangeMs": [
+          720,
+          1040
+        ],
+        "action": "all arcs on"
+      },
+      {
+        "rangeMs": [
+          1040,
+          1320
+        ],
+        "action": "all arcs fade out together"
+      },
+      {
+        "rangeMs": [
+          1320,
+          1800
+        ],
+        "action": "pause with base icon"
+      }
+    ],
+    "base": "Wi-Fi/1x/wifi-signal-0.png",
+    "layers": [
+      "动效/1x/wifi-arc-1.png",
+      "动效/1x/wifi-arc-2.png",
+      "动效/1x/wifi-arc-3.png"
+    ],
+    "position": [
+      59,
+      5,
+      40,
+      32
+    ],
+    "easing": "smoothstep(t)=t*t*(3-2*t)"
+  },
+  "bluetooth": {
+    "cycleMs": 1200,
+    "stages": [
+      {
+        "rangeMs": [
+          0,
+          500
+        ],
+        "opacity": 1
+      },
+      {
+        "rangeMs": [
+          500,
+          600
+        ],
+        "opacity": "1 to 0.2, smoothstep"
+      },
+      {
+        "rangeMs": [
+          600,
+          1100
+        ],
+        "opacity": 0.2
+      },
+      {
+        "rangeMs": [
+          1100,
+          1200
+        ],
+        "opacity": "0.2 to 1, smoothstep"
+      }
+    ],
+    "position": [
+      106,
+      5,
+      21,
+      32
+    ],
+    "asset": "Bluetooth/1x/bluetooth.png"
+  },
+  "events": {
+    "wifi.connecting": "start wave cycle",
+    "wifi.connected": "stop immediately; show static actual signal strength",
+    "wifi.failed": "stop; show actual offline state and mapped error page",
+    "bluetooth.discoverable_or_pairing": "blink",
+    "bluetooth.connected": "solid white",
+    "bluetooth.disabled": "hide",
+    "bluetooth.enabled_not_discoverable_or_connected": "static 20% opacity"
+  },
+  "notes": [
+    "State comes from actual radio/protocol events, not app binding alone.",
+    "Do not flash battery, time or page indicators.",
+    "No icon scaling or positional motion.",
+    "Off-screen web preview pauses. Reduced-motion mode uses a static intermediate frame."
+  ]
+}
