@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-21-readings-x112",
+  "version": "2026-11-21-readings-48px",
   "canvas": {
     "width": 502,
     "height": 410,
@@ -38,7 +38,7 @@
         "type": "icon",
         "asset": "切图/1x/temperature-icon.png",
         "x": 54,
-        "y": 76.0,
+        "y": 76,
         "width": 36,
         "height": 40,
         "visibleLeftX": 55.25,
@@ -51,14 +51,14 @@
       "reading": {
         "x": 112,
         "baseline": 114,
-        "size": 50,
+        "size": 48,
         "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "°C",
-        "exampleX": 216.10234375,
+        "exampleX": 212.10625,
         "baseline": 114,
         "size": 18,
         "weight": 400,
@@ -96,14 +96,14 @@
       "reading": {
         "x": 112,
         "baseline": 182,
-        "size": 50,
+        "size": 48,
         "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "%RH",
-        "exampleX": 174.52890625,
+        "exampleX": 172.24375,
         "baseline": 182,
         "size": 18,
         "weight": 400,
@@ -141,14 +141,14 @@
       "reading": {
         "x": 112,
         "baseline": 250,
-        "size": 50,
+        "size": 48,
         "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "ppm",
-        "exampleX": 230.4578125,
+        "exampleX": 225.8875,
         "baseline": 250,
         "size": 18,
         "weight": 400,
@@ -188,14 +188,14 @@
       "reading": {
         "x": 112,
         "baseline": 318,
-        "size": 50,
+        "size": 48,
         "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 174.52890625,
+        "exampleX": 172.24375,
         "baseline": 318,
         "size": 18,
         "weight": 400,
@@ -251,14 +251,14 @@
       "reading": {
         "x": 112,
         "baseline": 386,
-        "size": 50,
+        "size": 48,
         "weight": 600,
         "color": "#F5F7F8",
         "tracking": -0.6
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 174.52890625,
+        "exampleX": 172.24375,
         "baseline": 386,
         "size": 18,
         "weight": 400,
@@ -307,7 +307,7 @@
   "dynamicReading": {
     "left": 112,
     "right": 273,
-    "defaultSize": 50,
+    "defaultSize": 48,
     "minSize": 20,
     "unitSize": 18,
     "gap": 6,
