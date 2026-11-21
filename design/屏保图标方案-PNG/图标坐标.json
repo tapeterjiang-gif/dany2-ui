@@ -136,7 +136,12 @@
         "appearance": "Material Symbols Rounded air, fitted to 33.5×28.5px",
         "visualWidth": 30,
         "alignment": "visible alpha bottom aligned with reading glyph bottom",
-        "visibleBottomY": 250.5
+        "visibleBottomY": 250.5,
+        "caption": "CO2",
+        "captionSize": 10,
+        "captionX": 55.25,
+        "captionBaseline": 228.25,
+        "captionNumberSize": 8
       },
       "reading": {
         "x": 112,
