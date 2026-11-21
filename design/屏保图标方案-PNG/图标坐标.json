@@ -1,0 +1,339 @@
+{
+  "version": "2026-11-21-readings-x112",
+  "canvas": {
+    "width": 502,
+    "height": 410,
+    "cornerRadius": 82,
+    "background": "#000000"
+  },
+  "fonts": {
+    "family": "Roboto",
+    "regular": 400,
+    "semibold": 600,
+    "license": "SIL OFL 1.1"
+  },
+  "header": {
+    "time": {
+      "x": 64,
+      "baseline": 39,
+      "size": 26,
+      "weight": 400
+    },
+    "duration": {
+      "rightX": 438,
+      "baseline": 39,
+      "size": 26,
+      "weight": 400,
+      "text": "24 HOURS"
+    },
+    "color": "#F5F7F8",
+    "separatorY": 58
+  },
+  "rows": [
+    {
+      "id": "temperature",
+      "name": "TEMP",
+      "centerY": 92,
+      "title": {
+        "type": "icon",
+        "asset": "切图/1x/temperature-icon.png",
+        "x": 54,
+        "y": 76.0,
+        "width": 36,
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "thermometer with wavy marks",
+        "visualWidth": 30,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 114.5
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 114,
+        "size": 50,
+        "weight": 600,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "°C",
+        "exampleX": 216.10234375,
+        "baseline": 114,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 114,
+        "height": 49,
+        "exampleDomain": [
+          20,
+          28
+        ]
+      },
+      "separatorY": 126,
+      "exampleValue": 24.6
+    },
+    {
+      "id": "humidity",
+      "name": "RH",
+      "centerY": 160,
+      "title": {
+        "type": "icon",
+        "asset": "切图/1x/humidity-icon.png",
+        "x": 54,
+        "y": 151.25,
+        "width": 36,
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "outlined droplet with steam",
+        "visualWidth": 30,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 182.5
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 182,
+        "size": 50,
+        "weight": 600,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "%RH",
+        "exampleX": 174.52890625,
+        "baseline": 182,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 182,
+        "height": 49,
+        "exampleDomain": [
+          40,
+          70
+        ]
+      },
+      "separatorY": 194,
+      "exampleValue": 56
+    },
+    {
+      "id": "co2",
+      "name": "CO₂",
+      "centerY": 228,
+      "title": {
+        "type": "icon",
+        "asset": "切图/1x/co2-icon.png",
+        "x": 54,
+        "y": 217.75,
+        "width": 36,
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "Material Symbols Rounded air, fitted to 33.5×28.5px",
+        "visualWidth": 30,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 250.5
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 250,
+        "size": 50,
+        "weight": 600,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "ppm",
+        "exampleX": 230.4578125,
+        "baseline": 250,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 250,
+        "height": 49,
+        "exampleDomain": [
+          0,
+          2500
+        ]
+      },
+      "separatorY": 262,
+      "exampleValue": 2168
+    },
+    {
+      "id": "pm25",
+      "name": "PM2.5",
+      "centerY": 296,
+      "title": {
+        "type": "icon",
+        "asset": "切图/1x/pm25-icon.png",
+        "x": 54,
+        "y": 279.25,
+        "width": 36,
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "Material Symbols Rounded blur_on, 26×26px, small peripheral dots enlarged, with 2.5 caption",
+        "visualWidth": 30,
+        "captionSize": 12,
+        "captionBaseline": 315,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 318.5
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 318,
+        "size": 50,
+        "weight": 600,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "μg/m³",
+        "exampleX": 174.52890625,
+        "baseline": 318,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 318,
+        "height": 49,
+        "exampleDomain": [
+          0,
+          60
+        ],
+        "exampleHistoryAnchors": [
+          4,
+          5,
+          8,
+          13,
+          19,
+          26,
+          35,
+          31,
+          24,
+          14,
+          5,
+          4,
+          12,
+          26
+        ]
+      },
+      "separatorY": 330,
+      "exampleValue": 26
+    },
+    {
+      "id": "pm10",
+      "name": "PM10",
+      "centerY": 364,
+      "title": {
+        "type": "icon",
+        "asset": "切图/1x/pm10-icon.png",
+        "x": 54,
+        "y": 347.25,
+        "width": 36,
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "Material Symbols Rounded blur_on, 26×26px, small peripheral dots enlarged, with 10 caption",
+        "visualWidth": 30,
+        "captionSize": 12,
+        "captionBaseline": 383,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 386.5
+      },
+      "reading": {
+        "x": 112,
+        "baseline": 386,
+        "size": 50,
+        "weight": 600,
+        "color": "#F5F7F8",
+        "tracking": -0.6
+      },
+      "unit": {
+        "text": "μg/m³",
+        "exampleX": 174.52890625,
+        "baseline": 386,
+        "size": 18,
+        "weight": 400,
+        "color": "#F5F7F8"
+      },
+      "chart": {
+        "baseline": 386,
+        "height": 49,
+        "exampleDomain": [
+          0,
+          60
+        ]
+      },
+      "separatorY": 398,
+      "exampleValue": 17
+    }
+  ],
+  "plots": {
+    "x": 276,
+    "right": 462.06,
+    "width": 186.06,
+    "samples": 24,
+    "step": 7.82,
+    "barWidth": 6.2,
+    "topRadius": 1.5,
+    "bottomCorners": "square",
+    "fill": "grade color; top opacity 1, bottom opacity 0.84"
+  },
+  "meanLines": {
+    "x": 276,
+    "right": 462,
+    "width": 0.7,
+    "dash": [
+      4,
+      4
+    ],
+    "linecap": "butt",
+    "opacity": 0.72,
+    "color": "mean grade color mixed with 16% white",
+    "outline": false,
+    "numericLabels": false
+  },
+  "rulers": {
+    "visible": false
+  },
+  "dynamicReading": {
+    "left": 112,
+    "right": 273,
+    "defaultSize": 50,
+    "minSize": 20,
+    "unitSize": 18,
+    "gap": 6,
+    "tracking": -0.6,
+    "baseX": 146,
+    "extendedLeft": "146 - advance(first digit and optional sign, including one tracking interval)",
+    "digitCounting": "Temperature: count integer digits only, excluding sign, decimal point and fractional digits (24.6=2;100.0=3). Other metrics count digits.",
+    "extendConditions": {
+      "temperature": 3,
+      "co2": 4,
+      "pm25": 3,
+      "pm10": 3
+    },
+    "reference": "Humidity reading first-character anchor x146",
+    "metricArgument": "temperature / humidity / co2 / pm25 / pm10",
+    "alignment": "all readings start at x112, no digit-count-dependent shift"
+  },
+  "exampleOnly": true,
+  "interaction": {
+    "idleTimeoutSeconds": 1800,
+    "idleTimeoutMinutes": 30,
+    "trigger": "30 minutes without top touch-bar user interaction",
+    "resetOn": "touch-bar click or swipe",
+    "ignoreForIdleReset": "automatic sensor, chart and clock updates",
+    "pauseDuring": "active configuration, pairing or clear-settings operations",
+    "wake": "top touch-bar interaction returns to previous reading page"
+  },
+  "reference": "https://tapeterjiang-gif.github.io/environment_rating/design.html"
+}

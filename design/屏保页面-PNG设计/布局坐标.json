@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-16-final-humidity-outline-steam",
+  "version": "2026-11-21-readings-x112",
   "canvas": {
     "width": 502,
     "height": 410,
@@ -23,7 +23,8 @@
       "rightX": 438,
       "baseline": 39,
       "size": 26,
-      "weight": 400
+      "weight": 400,
+      "text": "24 HOURS"
     },
     "color": "#F5F7F8",
     "separatorY": 58
@@ -37,16 +38,18 @@
         "type": "icon",
         "asset": "切图/1x/temperature-icon.png",
         "x": 54,
-        "y": 74,
+        "y": 76.0,
         "width": 36,
-        "height": 36,
-        "color": "#16A34A",
-        "colorRule": "grade color of current reading; temperature uses current PMV",
-        "render": "tint white alpha PNG with current grade color",
-        "appearance": "thermometer with three extended wavy marks"
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "thermometer with wavy marks",
+        "visualWidth": 30,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 114.5
       },
       "reading": {
-        "x": 146,
+        "x": 112,
         "baseline": 114,
         "size": 50,
         "weight": 600,
@@ -55,7 +58,7 @@
       },
       "unit": {
         "text": "°C",
-        "exampleX": 250.10234375,
+        "exampleX": 216.10234375,
         "baseline": 114,
         "size": 18,
         "weight": 400,
@@ -70,26 +73,6 @@
         ]
       },
       "separatorY": 126,
-      "dynamicReading": {
-        "baseX": 146,
-        "extendAtDigits": 3,
-        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
-        "example": {
-          "text": "24.6",
-          "x": 146,
-          "baseline": 114,
-          "size": 50,
-          "weight": 600,
-          "tracking": -0.6,
-          "unit": "°C",
-          "unitX": 250.10234375,
-          "unitSize": 18,
-          "baseX": 146,
-          "shift": 0,
-          "digitCount": 2,
-          "extendsLeft": false
-        }
-      },
       "exampleValue": 24.6
     },
     {
@@ -100,26 +83,18 @@
         "type": "icon",
         "asset": "切图/1x/humidity-icon.png",
         "x": 54,
-        "y": 142,
+        "y": 151.25,
         "width": 36,
-        "height": 36,
-        "color": "#16A34A",
-        "colorRule": "grade color of current reading; temperature uses current PMV",
-        "render": "tint white alpha PNG with current grade color",
-        "appearance": "small hollow droplet in front of three vertical steam curves; no percent sign",
-        "strokeWidth": 2.2,
-        "dropCenterX": 16,
-        "steamCentersX": [
-          21,
-          27,
-          33
-        ],
-        "steamTop": 10,
-        "steamBottom": 27,
-        "occlusion": "droplet masks the steam behind its outline and interior"
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "outlined droplet with steam",
+        "visualWidth": 30,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 182.5
       },
       "reading": {
-        "x": 146,
+        "x": 112,
         "baseline": 182,
         "size": 50,
         "weight": 600,
@@ -128,7 +103,7 @@
       },
       "unit": {
         "text": "%RH",
-        "exampleX": 208.52890625,
+        "exampleX": 174.52890625,
         "baseline": 182,
         "size": 18,
         "weight": 400,
@@ -143,26 +118,6 @@
         ]
       },
       "separatorY": 194,
-      "dynamicReading": {
-        "baseX": 146,
-        "extendAtDigits": null,
-        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
-        "example": {
-          "text": "56",
-          "x": 146,
-          "baseline": 182,
-          "size": 50,
-          "weight": 600,
-          "tracking": -0.6,
-          "unit": "%RH",
-          "unitX": 208.52890625,
-          "unitSize": 18,
-          "baseX": 146,
-          "shift": 0,
-          "digitCount": 2,
-          "extendsLeft": false
-        }
-      },
       "exampleValue": 56
     },
     {
@@ -170,17 +125,21 @@
       "name": "CO₂",
       "centerY": 228,
       "title": {
-        "x": 72,
-        "baseline": 238,
-        "size": 36,
-        "weight": 600,
-        "anchor": "middle",
-        "color": "#EA580C",
-        "verticalAlignment": "center between row separators",
-        "colorRule": "grade color of current reading; temperature uses current PMV"
+        "type": "icon",
+        "asset": "切图/1x/co2-icon.png",
+        "x": 54,
+        "y": 217.75,
+        "width": 36,
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "Material Symbols Rounded air, fitted to 33.5×28.5px",
+        "visualWidth": 30,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 250.5
       },
       "reading": {
-        "x": 118.035546875,
+        "x": 112,
         "baseline": 250,
         "size": 50,
         "weight": 600,
@@ -189,7 +148,7 @@
       },
       "unit": {
         "text": "ppm",
-        "exampleX": 236.493359375,
+        "exampleX": 230.4578125,
         "baseline": 250,
         "size": 18,
         "weight": 400,
@@ -204,44 +163,30 @@
         ]
       },
       "separatorY": 262,
-      "exampleValue": 2168,
-      "dynamicReading": {
-        "baseX": 146,
-        "extendAtDigits": 4,
-        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
-        "example": {
-          "text": "2168",
-          "x": 118.035546875,
-          "baseline": 250,
-          "size": 50,
-          "weight": 600,
-          "tracking": -0.6,
-          "unit": "ppm",
-          "unitX": 236.493359375,
-          "unitSize": 18,
-          "baseX": 146,
-          "shift": 27.964453125,
-          "digitCount": 4,
-          "extendsLeft": true
-        }
-      }
+      "exampleValue": 2168
     },
     {
       "id": "pm25",
       "name": "PM2.5",
       "centerY": 296,
       "title": {
-        "x": 72,
-        "baseline": 304,
-        "size": 24,
-        "weight": 600,
-        "anchor": "middle",
-        "color": "#CA8A04",
-        "verticalAlignment": "center between row separators",
-        "colorRule": "grade color of current reading; temperature uses current PMV"
+        "type": "icon",
+        "asset": "切图/1x/pm25-icon.png",
+        "x": 54,
+        "y": 279.25,
+        "width": 36,
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "Material Symbols Rounded blur_on, 26×26px, small peripheral dots enlarged, with 2.5 caption",
+        "visualWidth": 30,
+        "captionSize": 12,
+        "captionBaseline": 315,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 318.5
       },
       "reading": {
-        "x": 146,
+        "x": 112,
         "baseline": 318,
         "size": 50,
         "weight": 600,
@@ -250,7 +195,7 @@
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 208.52890625,
+        "exampleX": 174.52890625,
         "baseline": 318,
         "size": 18,
         "weight": 400,
@@ -281,26 +226,6 @@
         ]
       },
       "separatorY": 330,
-      "dynamicReading": {
-        "baseX": 146,
-        "extendAtDigits": 3,
-        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
-        "example": {
-          "text": "26",
-          "x": 146,
-          "baseline": 318,
-          "size": 50,
-          "weight": 600,
-          "tracking": -0.6,
-          "unit": "μg/m³",
-          "unitX": 208.52890625,
-          "unitSize": 18,
-          "baseX": 146,
-          "shift": 0,
-          "digitCount": 2,
-          "extendsLeft": false
-        }
-      },
       "exampleValue": 26
     },
     {
@@ -308,17 +233,23 @@
       "name": "PM10",
       "centerY": 364,
       "title": {
-        "x": 72,
-        "baseline": 373,
-        "size": 26,
-        "weight": 600,
-        "anchor": "middle",
-        "color": "#65A30D",
-        "verticalAlignment": "center between row separators",
-        "colorRule": "grade color of current reading; temperature uses current PMV"
+        "type": "icon",
+        "asset": "切图/1x/pm10-icon.png",
+        "x": 54,
+        "y": 347.25,
+        "width": 36,
+        "height": 40,
+        "visibleLeftX": 55.25,
+        "colorRule": "grade color of current reading",
+        "appearance": "Material Symbols Rounded blur_on, 26×26px, small peripheral dots enlarged, with 10 caption",
+        "visualWidth": 30,
+        "captionSize": 12,
+        "captionBaseline": 383,
+        "alignment": "visible alpha bottom aligned with reading glyph bottom",
+        "visibleBottomY": 386.5
       },
       "reading": {
-        "x": 146,
+        "x": 112,
         "baseline": 386,
         "size": 50,
         "weight": 600,
@@ -327,7 +258,7 @@
       },
       "unit": {
         "text": "μg/m³",
-        "exampleX": 208.52890625,
+        "exampleX": 174.52890625,
         "baseline": 386,
         "size": 18,
         "weight": 400,
@@ -342,26 +273,6 @@
         ]
       },
       "separatorY": 398,
-      "dynamicReading": {
-        "baseX": 146,
-        "extendAtDigits": 3,
-        "rule": "layoutReading; extend left by the actual leading digit advance when condition matches; otherwise x146",
-        "example": {
-          "text": "17",
-          "x": 146,
-          "baseline": 386,
-          "size": 50,
-          "weight": 600,
-          "tracking": -0.6,
-          "unit": "μg/m³",
-          "unitX": 208.52890625,
-          "unitSize": 18,
-          "baseX": 146,
-          "shift": 0,
-          "digitCount": 2,
-          "extendsLeft": false
-        }
-      },
       "exampleValue": 17
     }
   ],
@@ -394,7 +305,7 @@
     "visible": false
   },
   "dynamicReading": {
-    "left": 146,
+    "left": 112,
     "right": 273,
     "defaultSize": 50,
     "minSize": 20,
@@ -411,7 +322,8 @@
       "pm10": 3
     },
     "reference": "Humidity reading first-character anchor x146",
-    "metricArgument": "temperature / humidity / co2 / pm25 / pm10"
+    "metricArgument": "temperature / humidity / co2 / pm25 / pm10",
+    "alignment": "all readings start at x112, no digit-count-dependent shift"
   },
   "exampleOnly": true,
   "interaction": {
@@ -422,5 +334,6 @@
     "ignoreForIdleReset": "automatic sensor, chart and clock updates",
     "pauseDuring": "active configuration, pairing or clear-settings operations",
     "wake": "top touch-bar interaction returns to previous reading page"
-  }
+  },
+  "reference": "https://tapeterjiang-gif.github.io/environment_rating/design.html"
 }
